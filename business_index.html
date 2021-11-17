@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>현황판 | 사업현황 | Home</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/component.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper b-dashboard">
+    <div class="top-wrap">
+        <div class="logo"><a href="index.html"><img src="assets/images/logo_new.png"></a></div>
+        <div class="user-info">
+            <strong>kumuka80 <span class="caret"></span></strong>
+            <div class="arrow"><img src="assets/images/top_arrow_right.png"></div>
+        </div>
+    </div>
+    <div class="body-wrap">
+<!--        <div class="nav-wrap">-->
+<!--            <div class="include" id="gnb"></div>-->
+<!--        </div>-->
+        <div class="container no-nav">
+            <div class="container-header">
+                <div class="location">
+                    <a href="#" class="home">Home</a>
+                    <a href="#">사업현황<span class="icon icon-caret"></span></a>
+                    <a href="#" class="active">현황판<span class="icon icon-caret-white"></span></a>
+                </div>
+            </div>
+            <div class="business-dashboard">
+                <h1><strong>KEIT사업통계</strong></h1>
+                <ul class="state-wrap">
+                    <li class="on" data-pos="0" data-topPos="0">
+                        <div class="slide-wrap">
+                            <i class="icon icon-slide-up"></i>
+                            <i class="icon icon-slide-down"></i>
+                        </div>
+                        <label>산업부<br>전문기관별 예산</label>
+                        <div class="state-items">
+                            <ul class="rolling-box">
+                                <li>KEIT 25,472억(5%)</li>
+                                <li>KEIT 25,472억(5%)</li>
+                                <li>KEIT 25,472억(5%)</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-pos="0" data-topPos="0">
+                        <div class="slide-wrap">
+                            <i class="icon icon-slide-up"></i>
+                            <i class="icon icon-slide-down"></i>
+                        </div>
+                        <label>사업유형 분류별<br>사업 예산</label>
+                        <div class="state-items">
+                            <ul class="rolling-box">
+                                <li>예타 25,472억(5%)</li>
+                                <li>예타 25,472억(5%)</li>
+                                <li>예타 25,472억(5%)</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-pos="0" data-topPos="0">
+                        <div class="slide-wrap">
+                            <i class="icon icon-slide-up"></i>
+                            <i class="icon icon-slide-down"></i>
+                        </div>
+                        <label>산업 R&D투자<br>분야별 예산</label>
+                        <div class="state-items">
+                            <ul class="rolling-box">
+                                <li>디지털전환 25,472억(5%)</li>
+                                <li>디지털전환 25,472억(5%)</li>
+                                <li>디지털전환 25,472억(5%)</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-pos="0" data-topPos="0">
+                        <div class="slide-wrap">
+                            <i class="icon icon-slide-up"></i>
+                            <i class="icon icon-slide-down"></i>
+                        </div>
+                        <label>KEIT<br>프로그램별 예산</label>
+                        <div class="state-items">
+                            <ul class="rolling-box">
+                                <li>소재부품장비경쟁력강화 25,472억(5%)</li>
+                                <li>소재부품장비경쟁력강화 25,472억(5%)</li>
+                                <li>소재부품장비경쟁력강화 25,472억(5%)</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-pos="0" data-topPos="0">
+                        <div class="slide-wrap">
+                            <i class="icon icon-slide-up"></i>
+                            <i class="icon icon-slide-down"></i>
+                        </div>
+                        <label>산업기술<br>분류별 사업 예산</label>
+                        <div class="state-items">
+                            <ul class="rolling-box">
+                                <li>기계소재 25,472억(5%)</li>
+                                <li>기계소재 25,472억(5%)</li>
+                                <li>기계소재 25,472억(5%)</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="chart-zone">
+                    <div class="chart temp">CHART AREA</div>
+                    <div class="chart temp">CHART AREA</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function (){
+        $('.slide-wrap').find('i').click(function(){
+
+            var rolling = $(this).parent('.slide-wrap').siblings('.state-items').children('.rolling-box')
+            var rollingItem = rolling.children('li')
+
+            var pos = Number($(this).parents("li").attr("data-pos"));
+            var topPos = Number($(this).parents("li").attr("data-topPos"));
+
+            if($(this).hasClass('icon-slide-up')){
+                if(pos < rollingItem.length -1){
+                    $(this).parent('.slide-wrap').siblings('.state-items').children('.rolling-box').css('top',topPos -= rollingItem.height())
+                    pos += 1;
+                    $(this).parents("li").attr("data-pos",pos);
+                    $(this).parents("li").attr("data-topPos",topPos);
+                }
+            }else if($(this).hasClass('icon-slide-down')){
+                if(pos > 0){
+                    $(this).parent('.slide-wrap').siblings('.state-items').children('.rolling-box').css('top',topPos += rollingItem.height())
+                    pos -= 1;
+                    $(this).parents("li").attr("data-pos",pos);
+                    $(this).parents("li").attr("data-topPos",topPos);
+                }
+            }
+        })
+    })
+</script>
+
+
+</body>
+</html>

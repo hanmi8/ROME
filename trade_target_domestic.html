@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>국내 수입품목 분석 | 무역시장분석(Target) | 무역통계기반 유망품목발굴 | Home</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/component.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="top-wrap">
+        <div class="logo"><a href="index.html"><img src="assets/images/logo_new.png"></a></div>
+        <div class="user-info">
+            <strong>kumuka80 <span class="caret"></span></strong>
+            <div class="arrow"><img src="assets/images/top_arrow_right.png"></div>
+        </div>
+    </div>
+    <div class="body-wrap">
+        <div class="nav-wrap">
+            <div class="include" id="gnb"></div>
+        </div>
+        <div class="container">
+            <div class="container-header">
+                <ul class="tabs">
+                    <li class="on"><a href="#tab1">설명</a></li>
+                    <li><a href="#tab2">검색</a></li>
+                </ul>
+                <div class="location">
+                    <a href="#" class="home">Home</a>
+                    <a href="#">무역통계기반 유망품목발굴<span class="icon icon-caret"></span></a>
+                    <a href="#">무역시장분석(Target)<span class="icon icon-caret"></span></a>
+                    <a href="#" class="active">국내 수입품목 분석<span class="icon icon-caret-white"></span></a>
+                </div>
+            </div>
+            <div class="tab-contents" id="tab1" style="display:block;">
+                <div class="overview-header domestic">
+                    <h1>국내 주요 수입국 수출통제에 대비한 품목추출의 개념</h1>
+                </div>
+                <dl class="overview-body">
+                    <dt>선택 기준</dt>
+                </dl>
+                <table class="table-vertical">
+                    <colgroup>
+                        <col width="">
+                        <col width="">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>지표</th>
+                        <th>기준</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="text-left">Prody Index</td>
+                        <td class="text-left">$30,000 이상</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">수입집중도</td>
+                        <td class="text-left"><span class="text-info">우리나라의 수입의존도</span>가 높은 상품</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">HH Index & 무역특화지수</td>
+                        <td class="text-left">표준화(평균 0 & 표준편차 1)를 이용하여 두 값의 평균값이 0 이상</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">연평균수입액</td>
+                        <td class="text-left">최근 3년 평균 50만 달러 이상 상품</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <dl class="overview-body mt-24">
+                    <dt>활용방법</dt>
+                    <dd>국내 인건비 등을 고려하여 GDP가 3만$ 이상인 국가에서 생산하는 고부가가치 품목으로</dd>
+                    <dd>우리나라의 대외 수입의존도가 50% 이상인 품목 중에서</dd>
+                    <dd>개발이 필요할 만큼 시장규모(=연평균 수입액)가 되는 품목을 추출</dd>
+                    <dd>위 조건으로 추출된 품목은 무역규제에 대비한 국내개발이 필요한 상품이라고 볼 수 있음</dd>
+                </dl>
+            </div>
+            <div class="tab-contents" id="tab2" style="display:none;">
+                <div class="search-wrap mb-24">
+                    <div class="form-horizontal input-wrap">
+                        <div class="form-group w100p">
+                            <label class="control-label primary" style="width:136px;">품목코드(HS 코드)</label>
+                            <div class="form-input-wrap">
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:500px;">
+                            </div>
+                            <label class="control-label primary" style="width:136px;">수입의존도</label>
+                            <div class="form-input-wrap terms min-max">
+                                <strong>Min</strong>
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
+                                <span>~</span>
+                                <strong>Max</strong>
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-horizontal input-wrap">
+                        <div class="form-group w100p">
+                            <label class="control-label primary" style="width:136px;">Prody Index</label>
+                            <div class="form-input-wrap">
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:500px;">
+                            </div>
+                            <label class="control-label primary" style="width:136px;">연평균수입액</label>
+                            <div class="form-input-wrap terms min-max">
+                                <strong>Min</strong>
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
+                                <span>~</span>
+                                <strong>Max</strong>
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-horizontal input-wrap">
+                        <div class="form-group w100p">
+                            <label class="control-label primary" style="width:136px;">키워드</label>
+                            <div class="dropdown mr-16" style="width:150px;">
+                                <strong class="dropdown-toggle">전체</strong>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn-search"></button>
+                    </div>
+                </div>
+                <div class="btn-wrap text-right mb-24"><button class="btn btn-white btn-small hover-black"><i class="icon icon-file-xls left"></i>엑셀다운로드</button></div>
+                <table class="table-vertical px-8 mb-30">
+                    <colgroup>
+                        <col width="88px">
+                        <col width="126px">
+                        <col width="241px">
+                        <col width="116px">
+                        <col width="">
+                        <col width="216px">
+                        <col width="96px">
+                        <col width="155px">
+                        <col width="186px">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>분석국가</th>
+                        <th>HS 코드</th>
+                        <th>상품명</th>
+                        <th>MTI</th>
+                        <th>KSIC산업명</th>
+                        <th>Prody Index</th>
+                        <th>수입국</th>
+                        <th>수입의존도</th>
+                        <th>연평균수입액(천$)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>미국</td>
+                        <td>754158</td>
+                        <td class="text-left">정제한 구리로 만든 것</td>
+                        <td class="text-left">동조가공품</td>
+                        <td class="text-left">동 압연, 압출 및 연신제품 제조업</td>
+                        <td class="text-right">37,952</td>
+                        <td>중국</td>
+                        <td class="text-right">73%</td>
+                        <td class="text-right">85,141</td>
+                    </tr>
+                    <tr>
+                        <td>미국</td>
+                        <td>754158</td>
+                        <td class="text-left">정제한 구리로 만든 것</td>
+                        <td class="text-left">동조가공품</td>
+                        <td class="text-left">동 압연, 압출 및 연신제품 제조업</td>
+                        <td class="text-right">37,952</td>
+                        <td>중국</td>
+                        <td class="text-right">73%</td>
+                        <td class="text-right">85,141</td>
+                    </tr>
+                    <tr>
+                        <td>미국</td>
+                        <td>754158</td>
+                        <td class="text-left">정제한 구리로 만든 것</td>
+                        <td class="text-left">동조가공품</td>
+                        <td class="text-left">동 압연, 압출 및 연신제품 제조업</td>
+                        <td class="text-right">37,952</td>
+                        <td>중국</td>
+                        <td class="text-right">73%</td>
+                        <td class="text-right">85,141</td>
+                    </tr>
+                    <tr>
+                        <td>미국</td>
+                        <td>754158</td>
+                        <td class="text-left">정제한 구리로 만든 것</td>
+                        <td class="text-left">동조가공품</td>
+                        <td class="text-left">동 압연, 압출 및 연신제품 제조업</td>
+                        <td class="text-right">37,952</td>
+                        <td>중국</td>
+                        <td class="text-right">73%</td>
+                        <td class="text-right">85,141</td>
+                    </tr>
+                    <tr>
+                        <td>미국</td>
+                        <td>754158</td>
+                        <td class="text-left">정제한 구리로 만든 것</td>
+                        <td class="text-left">동조가공품</td>
+                        <td class="text-left">동 압연, 압출 및 연신제품 제조업</td>
+                        <td class="text-right">37,952</td>
+                        <td>중국</td>
+                        <td class="text-right">73%</td>
+                        <td class="text-right">85,141</td>
+                    </tr>
+                    <tr>
+                        <td>미국</td>
+                        <td>754158</td>
+                        <td class="text-left">정제한 구리로 만든 것</td>
+                        <td class="text-left">동조가공품</td>
+                        <td class="text-left">동 압연, 압출 및 연신제품 제조업</td>
+                        <td class="text-right">37,952</td>
+                        <td>중국</td>
+                        <td class="text-right">73%</td>
+                        <td class="text-right">85,141</td>
+                    </tr>
+                    <tr>
+                        <td>미국</td>
+                        <td>754158</td>
+                        <td class="text-left">정제한 구리로 만든 것</td>
+                        <td class="text-left">동조가공품</td>
+                        <td class="text-left">동 압연, 압출 및 연신제품 제조업</td>
+                        <td class="text-right">37,952</td>
+                        <td>중국</td>
+                        <td class="text-right">73%</td>
+                        <td class="text-right">85,141</td>
+                    </tr>
+                    <tr>
+                        <td>미국</td>
+                        <td>754158</td>
+                        <td class="text-left">정제한 구리로 만든 것</td>
+                        <td class="text-left">동조가공품</td>
+                        <td class="text-left">동 압연, 압출 및 연신제품 제조업</td>
+                        <td class="text-right">37,952</td>
+                        <td>중국</td>
+                        <td class="text-right">73%</td>
+                        <td class="text-right">85,141</td>
+                    </tr>
+                    <tr>
+                        <td>미국</td>
+                        <td>754158</td>
+                        <td class="text-left">정제한 구리로 만든 것</td>
+                        <td class="text-left">동조가공품</td>
+                        <td class="text-left">동 압연, 압출 및 연신제품 제조업</td>
+                        <td class="text-right">37,952</td>
+                        <td>중국</td>
+                        <td class="text-right">73%</td>
+                        <td class="text-right">85,141</td>
+                    </tr>
+                    <tr>
+                        <td>미국</td>
+                        <td>754158</td>
+                        <td class="text-left">정제한 구리로 만든 것</td>
+                        <td class="text-left">동조가공품</td>
+                        <td class="text-left">동 압연, 압출 및 연신제품 제조업</td>
+                        <td class="text-right">37,952</td>
+                        <td>중국</td>
+                        <td class="text-right">73%</td>
+                        <td class="text-right">85,141</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paginate">
+                    <a href="#" class="forward"><i class="icon icon-arrow-double-prev"></i></a>
+                    <a href="#" class="prev"><i class="icon icon-arrow-prev"></i></a>
+                    <a href="#" class="on">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="next"><i class="icon icon-arrow-next"></i></a>
+                    <a href="#" class="backward"><i class="icon icon-arrow-double-next"></i></a>
+                </div>
+                <ul class="explanatory mt-32">
+                    <li>* MTI : 산업부의 수출입품목분류</li>
+                    <li>* KSI : 한국표준산업분류 </li>
+                    <li>* HS 코드 : 무역거래상품분류 코드</li>
+                    <li>* 수입액 : 2017-2019년 연평균수입액</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

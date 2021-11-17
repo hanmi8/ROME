@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>수입의존도 | 무역통계지수(index) | 무역통계기반 유망품목발굴 | Home</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/component.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="top-wrap">
+        <div class="logo"><a href="index.html"><img src="assets/images/logo_new.png"></a></div>
+        <div class="user-info">
+            <strong>kumuka80 <span class="caret"></span></strong>
+            <div class="arrow"><img src="assets/images/top_arrow_right.png"></div>
+        </div>
+    </div>
+    <div class="body-wrap">
+        <div class="nav-wrap">
+            <div class="include" id="gnb"></div>
+        </div>
+        <div class="container">
+            <div class="container-header">
+                <ul class="tabs">
+                    <li class="on"><a href="#tab1">설명</a></li>
+                    <li><a href="#tab2">검색</a></li>
+                </ul>
+                <div class="location">
+                    <a href="#" class="home">Home</a>
+                    <a href="#">무역통계기반 유망품목발굴<span class="icon icon-caret"></span></a>
+                    <a href="#">무역통계지수(index)<span class="icon icon-caret"></span></a>
+                    <a href="#" class="active">수입의존도<span class="icon icon-caret-white"></span></a>
+                </div>
+            </div>
+            <div class="tab-contents" id="tab1" style="display:block;">
+                <div class="overview-header dependence">
+                    <h1>무역상대국 수입의존도(Rate of Dependence on Imports)의 개념</h1>
+                </div>
+                <dl class="overview-body">
+                    <dt>정의</dt>
+                    <dd>한 나라가 무역 상대 국가에 대한 수입의존도를 측정하는 지표</dd>
+                    <dd class="border-bottom mb-24">품목별로 한 나라의 전체 수입액 중에서 특정 상대국가로부터 수입액의 비중으로 산출</dd>
+                    <dt>산식</dt>
+                    <dd class="border-bottom mb-24">무역상대국 수입의존도 = <img src="assets/images/img_trade_overview_06.png"></dd>
+                    <dt>활용</dt>
+                    <dd>어느 한 국가가 특정 무역상대국에 대한 수입의존도가 지나치게 높은 수준(50% 이상)이라면 해당 품목은 만일 양국 간 무역분쟁(예: 미-중) 등이 발생할 경우에 제3국(예: 한국)에게는 시장진입의 기회가 될 수 있는 품목으로 볼 수 있음</dd>
+                    <dd>우리 나라가 특정 국가(일본 등)에 지나치게 높은 수준의 수입의존도가 있는 상품은 상대국의 수출규제 등 대외적 충격에 대해 취약한 상품으로 볼 수 있음</dd>
+                </dl>
+            </div>
+            <div class="tab-contents" id="tab2" style="display:none;">
+                <div class="search-wrap mb-30">
+                    <div class="form-horizontal input-wrap">
+                        <div class="form-group">
+                            <label class="control-label primary" style="width:65px;">분석국가</label>
+                            <div class="form-input-wrap">
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:300px">
+                            </div>
+                            <label class="control-label primary" style="width:126px;">키워드</label>
+                            <div class="dropdown mr-16" style="width:150px;">
+                                <strong class="dropdown-toggle">전체</strong>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                            <input type="text" class="form-control" style="width:500px;">
+                        </div>
+                    </div>
+                    <div class="form-horizontal input-wrap">
+                        <div class="form-group w100p">
+                            <label class="control-label primary" style="width:65px;">HS 코드</label>
+                            <div class="form-input-wrap">
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:300px">
+                            </div>
+                            <label class="control-label primary" style="width:126px;">Prody Index</label>
+                            <div class="form-input-wrap terms min-max">
+                                <strong>Min</strong>
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
+                                <span>~</span>
+                                <strong>Max</strong>
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
+                            </div>
+                        </div>
+                        <button class="btn-search"></button>
+                    </div>
+                </div>
+                <dl class="overview-body">
+                    <dt>검색 방법</dt>
+                    <dd>분석 국가 : 수입의존도를 분석하고자 하는 분석대상 국가를 선택 (한국, 미국, 중국 중 1개 선택)</dd>
+                    <dd>HS 코드 : 기획의 대상이 되는 특정 품목을 HS 코드로 선택하여 해당 품목의 수입의존도를 검색</dd>
+                    <dd>키워드 검색 : 상품명, MTI산업명, KSIC산업명 내 키워드로 해당 품목의 수입의존도를 검색</dd>
+                    <dd>수입의존도 : 특정 범위(예: 50%~100%)에 해당하는 품목들을 일괄적으로 추출 가능</dd>
+                </dl>
+                <div class="btn-wrap text-right mb-24"><button class="btn btn-white btn-small hover-black"><i class="icon icon-file-xls left"></i>엑셀다운로드</button></div>
+                <table class="table-vertical px-8">
+                    <colgroup>
+                        <col width="65px">
+                        <col width="69px">
+                        <col width="141px">
+                        <col width="296px">
+                        <col width="126px">
+                        <col width="">
+                        <col width="96px">
+                        <col width="155px">
+                        <col width="186px">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>분석년도</th>
+                        <th>분석국가</th>
+                        <th>MTI</th>
+                        <th>KSIC산업명</th>
+                        <th>HS 코드</th>
+                        <th>품목명</th>
+                        <th>수입상대국</th>
+                        <th>수입액(천$)</th>
+                        <th>수입의존도</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>2020</td>
+                        <td>한국</td>
+                        <td class="text-left">기타화학공업제품</td>
+                        <td class="text-left">그외 기타 분류안된 비금속 광물제품 제조업</td>
+                        <td>3801101056</td>
+                        <td class="text-left">이차전지 제조용</td>
+                        <td>중국</td>
+                        <td class="text-right">8,620</td>
+                        <td class="text-right">0.91</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>한국</td>
+                        <td class="text-left">기타화학공업제품</td>
+                        <td class="text-left">그외 기타 분류안된 비금속 광물제품 제조업</td>
+                        <td>3801101056</td>
+                        <td class="text-left">이차전지 제조용</td>
+                        <td>중국</td>
+                        <td class="text-right">8,620</td>
+                        <td class="text-right">0.91</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>한국</td>
+                        <td class="text-left">기타화학공업제품</td>
+                        <td class="text-left">그외 기타 분류안된 비금속 광물제품 제조업</td>
+                        <td>3801101056</td>
+                        <td class="text-left">이차전지 제조용</td>
+                        <td>중국</td>
+                        <td class="text-right">8,620</td>
+                        <td class="text-right">0.91</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>한국</td>
+                        <td class="text-left">기타화학공업제품</td>
+                        <td class="text-left">그외 기타 분류안된 비금속 광물제품 제조업</td>
+                        <td>3801101056</td>
+                        <td class="text-left">이차전지 제조용</td>
+                        <td>중국</td>
+                        <td class="text-right">8,620</td>
+                        <td class="text-right">0.91</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>한국</td>
+                        <td class="text-left">기타화학공업제품</td>
+                        <td class="text-left">그외 기타 분류안된 비금속 광물제품 제조업</td>
+                        <td>3801101056</td>
+                        <td class="text-left">이차전지 제조용</td>
+                        <td>중국</td>
+                        <td class="text-right">8,620</td>
+                        <td class="text-right">0.91</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>한국</td>
+                        <td class="text-left">기타화학공업제품</td>
+                        <td class="text-left">그외 기타 분류안된 비금속 광물제품 제조업</td>
+                        <td>3801101056</td>
+                        <td class="text-left">이차전지 제조용</td>
+                        <td>중국</td>
+                        <td class="text-right">8,620</td>
+                        <td class="text-right">0.91</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>한국</td>
+                        <td class="text-left">기타화학공업제품</td>
+                        <td class="text-left">그외 기타 분류안된 비금속 광물제품 제조업</td>
+                        <td>3801101056</td>
+                        <td class="text-left">이차전지 제조용</td>
+                        <td>중국</td>
+                        <td class="text-right">8,620</td>
+                        <td class="text-right">0.91</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>한국</td>
+                        <td class="text-left">기타화학공업제품</td>
+                        <td class="text-left">그외 기타 분류안된 비금속 광물제품 제조업</td>
+                        <td>3801101056</td>
+                        <td class="text-left">이차전지 제조용</td>
+                        <td>중국</td>
+                        <td class="text-right">8,620</td>
+                        <td class="text-right">0.91</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>한국</td>
+                        <td class="text-left">기타화학공업제품</td>
+                        <td class="text-left">그외 기타 분류안된 비금속 광물제품 제조업</td>
+                        <td>3801101056</td>
+                        <td class="text-left">이차전지 제조용</td>
+                        <td>중국</td>
+                        <td class="text-right">8,620</td>
+                        <td class="text-right">0.91</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>한국</td>
+                        <td class="text-left">기타화학공업제품</td>
+                        <td class="text-left">그외 기타 분류안된 비금속 광물제품 제조업</td>
+                        <td>3801101056</td>
+                        <td class="text-left">이차전지 제조용</td>
+                        <td>중국</td>
+                        <td class="text-right">8,620</td>
+                        <td class="text-right">0.91</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paginate">
+                    <a href="#" class="forward"><i class="icon icon-arrow-double-prev"></i></a>
+                    <a href="#" class="prev"><i class="icon icon-arrow-prev"></i></a>
+                    <a href="#" class="on">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="next"><i class="icon icon-arrow-next"></i></a>
+                    <a href="#" class="backward"><i class="icon icon-arrow-double-next"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

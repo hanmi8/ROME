@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>그룹검색 | R&D finder | Home</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/component.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="top-wrap">
+        <div class="logo"><a href="index.html"><img src="assets/images/logo_new.png"></a></div>
+        <div class="user-info">
+            <strong>kumuka80 <span class="caret"></span></strong>
+            <div class="arrow"><img src="assets/images/top_arrow_right.png"></div>
+        </div>
+    </div>
+    <div class="body-wrap">
+        <div class="nav-wrap">
+            <div class="include" id="gnb"></div>
+        </div>
+        <div class="container">
+            <div class="container-header">
+<!--                <ul class="tabs">-->
+<!--                    <li class="on"><a href="#">기업</a></li>-->
+<!--                    <li><a href="#">기업</a></li>-->
+<!--                </ul>-->
+                <div class="location">
+                    <a href="#" class="home">Home</a>
+                    <a href="#">R&D Finder<span class="icon icon-caret"></span></a>
+                    <a href="#" class="active">그룹 검색 <span class="icon icon-caret-white"></span></a>
+                </div>
+            </div>
+            <div class="search-wrap" style="margin-bottom:15px;">
+                <div class="form-horizontal input-wrap">
+                    <div class="form-group">
+                        <label class="control-label primary" style="width:113px;">주생산품</label>
+                        <div class="form-input-wrap">
+                            <input type="text" class="form-control mr-8" style="width:150px;" placeholder="입력 전">
+                            <button class="btn btn-skyblue btn-plus mr-8"></button>
+                            <div class="dropdown sub mr-8" style="width:100px;">
+                                <strong class="dropdown-toggle">and</strong>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"></a>and</li>
+                                    <li><a href="#"></a>or</li>
+                                    <li><a href="#"></a>not</li>
+                                </ul>
+                            </div>
+                            <div class="input-times-wrap">
+                                <input type="text" class="form-control sub" value="분리막" style="width:100px;">
+                                <a href="#" class="times"><i class="icon icon-times-small"></i></a>
+                            </div>
+                        </div>
+                        <label class="control-label default" style="width:53px;">배제어</label>
+                        <div class="form-input-wrap">
+                            <input type="text" class="form-control mr-8" style="width:150px;">
+                            <button class="btn btn-skyblue btn-plus"></button>
+                        </div>
+                    </div>
+                    <button class="btn-search"></button>
+                </div>
+                <div class="form-horizontal input-wrap">
+                    <div class="form-group">
+                        <label class="control-label primary" style="width:113px;">기업구분</label>
+                        <div class="radio-wrap" style="width:290px;">
+                            <label><span class="icon-checkbox lg on"></span>대기업</label>
+                            <label><span class="icon-checkbox lg"></span>중견기업</label>
+                            <label><span class="icon-checkbox lg"></span>중소기업</label>
+                        </div>
+                        <label class="control-label primary" style="width:113px;">외감여부</label>
+                        <div class="radio-wrap" style="width:200px;">
+                            <label><span class="icon-checkbox lg"></span>Y</label>
+                            <label><span class="icon-checkbox lg"></span>N</label>
+                        </div>
+                        <label class="control-label primary" style="width:113px;">상장구분</label>
+                        <div class="radio-wrap">
+                            <label><span class="icon-checkbox lg"></span>코넥스</label>
+                            <label><span class="icon-checkbox lg"></span>코스닥</label>
+                            <label><span class="icon-checkbox lg"></span>코스피</label>
+                            <label><span class="icon-checkbox lg"></span>기타</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-horizontal input-wrap">
+                    <div class="form-group">
+                        <label class="control-label primary" style="width:113px;">휴폐업구분</label>
+                        <div class="radio-wrap" style="width:290px;">
+                            <label><span class="icon-checkbox lg"></span>정상</label>
+                            <label><span class="icon-checkbox lg"></span>휴폐업</label>
+                        </div>
+                        <label class="control-label primary" style="width:113px;">업종선택</label>
+                        <div class="form-input-wrap">
+                            <input type="text" class="form-control" style="width:200px;">
+                        </div>
+                        <label class="control-label primary" style="width:113px;">지역선택</label>
+                        <div class="form-input-wrap">
+                            <input type="text" class="form-control" style="width:200px;">
+                        </div>
+                    </div>
+                    <button class="btn btn-malibu search-detail-open">상세 검색 조건 열기<i class="icon icon-arrow-down-white right"></i></button>
+                </div>
+            </div>
+            <div class="search-detail">
+                <!-- 1 -->
+                <ul>
+                    <li>
+                        <div class="form-group">
+                            <label class="label-caret">설립년도</label>
+                            <div class="calendar-wrap sub">
+                                <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                <span>~</span>
+                                <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">이자보상비율</label>
+                            <div class="radio-wrap">
+                                <label><span class="icon-checkbox"></span>2년연속 1미만</label>
+                                <label><span class="icon-checkbox"></span>그 외</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">매출규모(백만원)</label>
+                            <div class="terms sub">
+                                <input type="text" class="form-control" style="width:120px;" placeholder="입력 전">
+                                <span>~</span>
+                                <input type="text" class="form-control" style="width:120px;" placeholder="입력 전">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <label class="label-caret">종업원수</label>
+                            <div class="terms sub">
+                                <input type="text" class="form-control" style="width:120px;" placeholder="입력 전">
+                                <span>~</span>
+                                <input type="text" class="form-control" style="width:120px;" placeholder="입력 전">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">영업이익(백만원)</label>
+                            <div class="terms sub">
+                                <input type="text" class="form-control" style="width:120px;" placeholder="입력 전">
+                                <span>~</span>
+                                <input type="text" class="form-control" style="width:120px;" placeholder="입력 전">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">부채비율(%)</label>
+                            <div class="terms sub">
+                                <input type="text" class="form-control" style="width:120px;" placeholder="입력 전">
+                                <span>~</span>
+                                <input type="text" class="form-control" style="width:120px;" placeholder="입력 전">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 2 -->
+                <ul>
+                    <li>
+                        <div class="form-group w100p">
+                            <label class="label-caret">매출성장</label>
+                            <div class="d-flex align-center">
+                                <div class="calendar-wrap sub">
+                                    <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                    <span>~</span>
+                                    <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                </div>
+                                <em class="ml-8 mr-8">년 평균</em>
+                                <input type="text" class="form-control sub" style="width:95px;" placeholder="입력 전">
+                                <em class="ml-8">배 이상 매출 증가</em>
+                            </div>
+                            <div class="d-flex align-center">
+                                <div class="calendar-wrap sub">
+                                    <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                    <span>~</span>
+                                    <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                </div>
+                                <em class="ml-8 mr-8">년 평균</em>
+                                <input type="text" class="form-control sub" style="width:95px;" placeholder="입력 전">
+                                <em class="ml-8">배 이상 매출 증가</em>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group w100p">
+                            <label class="label-caret">고용성장</label>
+                            <div class="d-flex align-center">
+                                <div class="calendar-wrap sub">
+                                    <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                    <span>~</span>
+                                    <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                </div>
+                                <em class="ml-8 mr-8">년 평균</em>
+                                <input type="text" class="form-control sub" style="width:95px;" placeholder="입력 전">
+                                <em class="ml-8">배 이상 매출 증가</em>
+                            </div>
+                            <div class="d-flex align-center">
+                                <div class="calendar-wrap sub">
+                                    <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                    <span>~</span>
+                                    <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                </div>
+                                <em class="ml-8 mr-8">년 평균</em>
+                                <input type="text" class="form-control sub" style="width:95px;" placeholder="입력 전">
+                                <em class="ml-8">배 이상 매출 증가</em>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 3 -->
+                <ul>
+                    <li>
+                        <div class="form-group">
+                            <label class="label-caret">특허검색</label>
+                            <div class="d-flex">
+                                <input type="text" class="form-control sub" style="width:120px;" placeholder="입력 전">
+                                <button class="btn btn-paper btn-plus-white ml-8 mr-8"></button>
+                                <div class="dropdown sub" style="width:120px;">
+                                    <strong class="dropdown-toggle">and</strong>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"></a>and</li>
+                                        <li><a href="#"></a>or</li>
+                                        <li><a href="#"></a>not</li>
+                                    </ul>
+                                </div>
+                                <input type="text" class="form-control sub ml-8" value="분리막" style="width:120px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">배제어</label>
+                            <div class="d-flex">
+                                <input type="text" class="form-control sub" style="width:120px;" placeholder="입력 전">
+                                <button class="btn btn-paper btn-plus-white ml-8"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <label class="label-caret">특허출원년도</label>
+                            <div class="calendar-wrap sub">
+                                <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                <span>~</span>
+                                <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">국내보유특허건수</label>
+                            <div class="terms">
+                                <input type="text" class="form-control sub" style="width:120px;" placeholder="입력 전">
+                                <span>~</span>
+                                <input type="text" class="form-control sub" style="width:120px;" placeholder="입력 전">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">해외보유특허건수</label>
+                            <div class="terms">
+                                <input type="text" class="form-control sub" style="width:120px;" placeholder="입력 전">
+                                <span>~</span>
+                                <input type="text" class="form-control sub" style="width:120px;" placeholder="입력 전">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <label class="label-caret">과제검색</label>
+                            <div class="d-flex">
+                                <input type="text" class="form-control sub" style="width:120px;" placeholder="입력 전">
+                                <button class="btn btn-paper btn-plus-white ml-8 mr-8"></button>
+                                <div class="dropdown sub" style="width:120px;">
+                                    <strong class="dropdown-toggle">and</strong>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"></a>and</li>
+                                        <li><a href="#"></a>or</li>
+                                        <li><a href="#"></a>not</li>
+                                    </ul>
+                                </div>
+                                <input type="text" class="form-control sub ml-8" value="분리막" style="width:120px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">배제어</label>
+                            <div class="d-flex">
+                                <input type="text" class="form-control sub" style="width:120px;" placeholder="입력 전">
+                                <button class="btn btn-paper btn-plus-white ml-8"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <label class="label-caret">과제수행년도</label>
+                            <div class="calendar-wrap sub">
+                                <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                <span>~</span>
+                                <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">과제수행건수</label>
+                            <div class="terms">
+                                <input type="text" class="form-control sub" style="width:120px;" placeholder="입력 전">
+                                <span>~</span>
+                                <input type="text" class="form-control sub" style="width:120px;" placeholder="입력 전">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">산업기술분류</label>
+                            <div class="dropdown sub tree" style="width:266px;">
+                                <strong class="dropdown-toggle">선택</strong>
+                                <ul class="dropdown-menu" style="max-height:300px;">
+                                    <li>
+                                        <div class="title"><label><span class="icon-checkbox"></span><em>정보통신업(대타이틀)</em></label><strong class="icon-collapse"></strong></div>
+                                        <ul class="depth-second">
+                                            <li><div class="title"><label><span class="icon-checkbox"></span><em>하드웨어 개발</em></label></div></li>
+                                            <li><div class="title"><label><span class="icon-checkbox"></span><em>소프트웨어 개발</em></label></div></li>
+                                            <li><div class="title"><label><span class="icon-checkbox"></span><em>중타이틀</em></label></div></li>
+                                            <li><div class="title"><label><span class="icon-checkbox"></span><em>중타이틀</em></label> <strong class="icon-collapse"></strong></div>
+                                                <ul class="depth-third">
+                                                    <li><div class="title"><label><span class="icon-checkbox"></span><em>소타이틀</em></label></div></li>
+                                                    <li><div class="title"><label><span class="icon-checkbox"></span><em>소타이틀</em></label></div></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="title"><label><span class="icon-checkbox"></span><em>정보통신업(대타이틀)</em></label><strong class="icon-collapse"></strong></div>
+                                        <ul class="depth-second">
+                                            <li><div class="title"><label><span class="icon-checkbox"></span><em>중타이틀</em></label></div></li>
+                                            <li><div class="title"><label><span class="icon-checkbox"></span><em>중타이틀</em></label></div></li>
+                                        </ul>
+                                    </li>
+                                    <li><div class="title"><label><span class="icon-checkbox"></span><em>정보통신업(대타이틀)</em></label></div></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <label class="label-caret">과제수행성과</label>
+                            <div class="radio-wrap">
+                                <label><span class="icon-checkbox"></span>Y</label>
+                                <label><span class="icon-checkbox"></span>N</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">과제수행유형</label>
+                            <div class="radio-wrap">
+                                <label><span class="icon-checkbox"></span>주관</label>
+                                <label><span class="icon-checkbox"></span>참여</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <label class="label-caret">과제수행상태</label>
+                            <div class="radio-wrap">
+                                <label><span class="icon-checkbox"></span>종료</label>
+                                <label><span class="icon-checkbox"></span>진행중</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">과제종료평가결과</label>
+                            <div class="radio-wrap">
+                                <label><span class="icon-checkbox"></span>전체</label>
+                                <label><span class="icon-checkbox"></span>혁신성과</label>
+                                <label><span class="icon-checkbox"></span>성공</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <label class="label-caret">우수사례 선정여부</label>
+                            <div class="radio-wrap">
+                                <label><span class="icon-checkbox"></span>Y</label>
+                                <label><span class="icon-checkbox"></span>N</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">과제수행성과</label>
+                            <div class="radio-wrap">
+                                <label><span class="icon-checkbox"></span>전체</label>
+                                <label><span class="icon-checkbox"></span>매출성과보유</label>
+                                <label><span class="icon-checkbox"></span>고용성과보유</label>
+                                <label><span class="icon-checkbox"></span>논문성과보유</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <label class="label-caret">기사검색년도</label>
+                            <div class="calendar-wrap sub">
+                                <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                                <span>~</span>
+                                <input type="text" class="form-control" style="width:120px;" placeholder="기간선택">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-caret">기사검색키워드</label>
+                            <div class="d-flex">
+                                <input type="text" class="form-control sub" style="width:120px;" placeholder="입력 전">
+                                <button class="btn btn-paper btn-plus-white ml-8 mr-8"></button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="tabs second">
+                <li class="on"><a href="#tab11">기업</a></li>
+                <li><a href="#tab12">재무</a></li>
+                <li><a href="#tab13">특허</a></li>
+                <li><a href="#tab14">R&D</a></li>
+                <li><a href="#tab15">뉴스</a></li>
+            </ul>
+            <div class="tabs-second-contents" id="tab11" style="display:block;">
+                <div class="section">
+                    <h2>기업 목록</h2>
+                    <table class="table-vertical px-8">
+                        <colgroup>
+                            <col width="34px">
+                            <col width="87px">
+                            <col width="86px">
+                            <col width="56px">
+                            <col width="66px">
+                            <col width="46px">
+                            <col width="41px">
+                            <col width="66px">
+                            <col width="76px">
+                            <col width="76px">
+                            <col width="47px">
+                            <col width="86px">
+                            <col width="77px">
+                            <col width="56px">
+                            <col width="159px">
+                            <col width="">
+                            <col width="53px">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="65px">
+                            <col width="70px">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>순
+                                번</th>
+                            <th>업체명</th>
+                            <th>주생산품</th>
+                            <th>설립
+                                일자</th>
+                            <th>기업
+                                구분</th>
+                            <th>지역
+                                구분</th>
+                            <th>외감
+                                여부</th>
+                            <th>상장
+                                구분</th>
+                            <th>법인
+                                등록번호 </th>
+                            <th>대표자
+                                등록번호</th>
+                            <th>업종
+                                1자리</th>
+                            <th>업종명
+                                10차</th>
+                            <th>휴폐업회생
+                                파산구분</th>
+                            <th>휴폐업
+                                일자</th>
+                            <th>매출액</th>
+                            <th>매출액</th>
+                            <th>부채
+                                비율</th>
+                            <th>영업
+                                이익</th>
+                            <th>특허
+                                출원</th>
+                            <th>해외
+                                특허</th>
+                            <th>KEIT
+                                과제수행</th>
+                            <th>주관/참여
+                                과제수행</th>
+                            <th>매출
+                                성과</th>
+                            <th>고용
+                                성과</th>
+                            <th>논문
+                                성과</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>한국에있는
+                                동성인쇄(주)</td>
+                            <td>종이 포대 및
+                                가방 제조업</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>중소기업</td>
+                            <td>제주도</td>
+                            <td>Y</td>
+                            <td>대상아님</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>1234 56-
+                                789154 7</td>
+                            <td>C</td>
+                            <td>종이포대 및
+                                가방 제조업</td>
+                            <td>정상</td>
+                            <td>1970/
+                                07/01</td>
+                            <td>####,###</td>
+                            <td>18</td>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Y</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h2>공급망 분석(Network)</h2>
+                    <ul class="state">
+                        <li><label>[공급망 분석]</label>공급만 분석 중심기관은 <span class="text-bold">AA, BB, CC</span> 순입니다.</li>
+                    </ul>
+                    <div class="card-wrap second">
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>공급망분석</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>관계분석</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>지역분포</h2>
+                    <div class="d-flex">
+                        <div class="w50p">
+                            <div class="map" style="height:615px;">
+
+                            </div>
+                        </div>
+                        <div class="w50p ml-16">
+                            <table class="table-vertical px-8">
+                                <colgroup>
+                                    <col width="56px">
+                                    <col width="116px">
+                                    <col width="56px">
+                                    <col width="174px">
+                                    <col width="76px">
+                                    <col width="46px">
+                                    <col width="76px">
+                                    <col width="116px">
+                                    <col width="">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>순번</th>
+                                    <th>업체명</th>
+                                    <th>업종 1자리</th>
+                                    <th>주생산품</th>
+                                    <th>기업구분</th>
+                                    <th>외감 여부</th>
+                                    <th>상장구분</th>
+                                    <th>매출액</th>
+                                    <th>종업 원수</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>동성인쇄(주)</td>
+                                    <td>C</td>
+                                    <td class="text-left">종이포대 및 가방제조업</td>
+                                    <td>중소기업</td>
+                                    <td>Y</td>
+                                    <td>대상아님</td>
+                                    <td class="text-right">10,000</td>
+                                    <td>18</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="paginate">
+                                <a href="#" class="forward"><i class="icon icon-arrow-double-prev"></i></a>
+                                <a href="#" class="prev"><i class="icon icon-arrow-prev"></i></a>
+                                <a href="#" class="on">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#" class="next"><i class="icon icon-arrow-next"></i></a>
+                                <a href="#" class="backward"><i class="icon icon-arrow-double-next"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-second-contents" id="tab12">
+                <div class="section">
+                    <h2>재무 정보</h2>
+                    <div class="card-wrap second">
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>텍스트영역</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>텍스트영역</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrap mt-24">
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>텍스트영역</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>기관재무 총액</h2>
+                    <ul class="state">
+                        <li><label>[성장성]</label>2020년(최신년도) 기준 매출액 168 억원, R&D 집중도 8% 수준으로 매출액 기준 <span class="text-info">업종평균 284 억원 대비 41%</span> 낮습니다.</li>
+                    </ul>
+                    <div class="card-wrap third">
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>매출액</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>영억이익률, 당기순이익률</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>종업원수</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-second-contents" id="tab13">
+                <div class="section">
+                    <h2>그룹 특허출원정보</h2>
+                    <ul class="state">
+                        <li><label>[특허출원]</label>2020년(최신년도) 기준 매출액 168 억원, R&D 집중도 8% 수준으로 매출액 기준 <span class="text-info">업종평균 284 억원 대비 41%</span> 낮습니다.</li>
+                        <li><label>[FAMILY 특허]</label>2020년(최신년도) 기준 매출액 168 억원, R&D 집중도 8% 수준으로 매출액 기준 <span class="text-info">업종평균 284 억원 대비 41%</span> 낮습니다.</li>
+                        <li><label>[IPC별 특허출원]</label>2020년(최신년도) 기준 매출액 168 억원, R&D 집중도 8% 수준으로 매출액 기준 <span class="text-info">업종평균 284 억원 대비 41%</span> 낮습니다.</li>
+                    </ul>
+                    <div class="card-wrap second">
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>텍스트영역</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>텍스트영역</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrap second mt-24">
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>텍스트영역</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>텍스트영역</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-second-contents" id="tab14">
+                <div class="section">
+                    <h2>그룹 R&D 현황</h2>
+                    <ul class="state">
+                        <li><label>[과제수행 상위기관]</label>2020년(최신년도) 기준 매출액 168 억원, R&D 집중도 8% 수준으로 매출액 기준 <span class="text-info">업종평균 284 억원 대비 41%</span> 낮습니다.</li>
+                        <li><label>[수행기관]</label>2020년(최신년도) 기준 매출액 168 억원, R&D 집중도 8% 수준으로 매출액 기준 <span class="text-info">업종평균 284 억원 대비 41%</span> 낮습니다.</li>
+                    </ul>
+                    <div class="card-wrap third">
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>지원현황 추이</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>주요과제 수행기관 TOP 10</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>수행기관 네트워크 분석</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>수행성과</h2>
+                    <ul class="state">
+                        <li><label>[수행성과]</label>2020년(최신년도) 기준 매출액 168 억원, R&D 집중도 8% 수준으로 매출액 기준 <span class="text-info">업종평균 284 억원 대비 41%</span> 낮습니다.</li>
+                        <li><label>[10억 당 지원성과]</label>2020년(최신년도) 기준 매출액 168 억원, R&D 집중도 8% 수준으로 매출액 기준 <span class="text-info">업종평균 284 억원 대비 41%</span> 낮습니다.</li>
+                    </ul>
+                    <div class="card-wrap third">
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>특허</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>매출</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="chart-header">
+                                <label>고용</label>
+                                <a href="#"></a>
+                            </div>
+                            <div class="chart-body">
+                                <div class="chart temp">chart area</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-second-contents" id="tab15">
+                <div class="form-horizontal system">
+                    <div class="d-flex">
+                        <div class="form-group">
+                            <label class="label-caret" style="width:92px;">연도</label>
+                            <div class="calendar-wrap sub">
+                                <input type="text" class="form-control">
+                                <span>~</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-horizontal system sub justify-between pr-4">
+                    <div class="d-flex">
+                        <div class="form-group">
+                            <label class="label-caret" style="width:92px;">검색내 키워드</label>
+                            <div class="d-complex">
+                                <input type="text" class="form-control" style="width:200px;">
+                                <button class="btn btn-primary btn-plus"></button>
+                                <div class="dropdown sub" style="width:100px;">
+                                    <strong class="dropdown-toggle">and</strong>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"></a>and</li>
+                                        <li><a href="#"></a>or</li>
+                                        <li><a href="#"></a>not</li>
+                                    </ul>
+                                </div>
+                                <input type="text" class="form-control" value="분리막" style="width:200px;">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-malibu"><i class="icon icon-search left"></i> 조회</button>
+                </div>
+                <div class="d-flex mt-16">
+                    <div class="w50p mr-16">
+                        <div class="card-wrap tech-news">
+                            <div class="card-item">
+                                <div class="chart-header">
+                                    <label>오늘의 과학기술 뉴스</label>
+                                    <a href="#"></a>
+                                </div>
+                                <div class="chart-body">
+                                    <ul class="news-list">
+                                        <li>
+                                            <div class="news-list-header">
+                                                <div class="d-flex align-center">
+                                                    <span class="badge badge-white">중앙일보</span>
+                                                    <h4>오세훈표 ‘취약층 무료 인강’ ... “사교육 조장”틀어막는 ...</h4>
+                                                </div>
+                                                <span class="news-date">2021.06.25</span>
+                                            </div>
+                                            <div class="news-list-body">
+                                                가치를 인간에 우리 위하여서. 거선의 무엇이 붙잡아 웅대한 싸인 든 피다. 인류의 우리는 청춘에서만 할지니,
+                                                인간에 두손을 공자는 뿐이다. 이것이야말로 동력은 새가 꾸며 힘차게 할지니,
+                                                일월과 교향악이다. 있을 동산에는 할지라도 든 우리의 유소년에게서 밝은 이상 것이다.
+                                                있는 길지 있는 바이며, 새가 이상 없으면 사막이다. 가슴이 얼마나 소담스러운 미묘한 있을 것은 구할 생생하며, 사막이다...
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="news-list-header">
+                                                <div class="d-flex align-center">
+                                                    <span class="badge badge-white">중앙일보</span>
+                                                    <h4>오세훈표 ‘취약층 무료 인강’ ... “사교육 조장”틀어막는 ...</h4>
+                                                </div>
+                                                <span class="news-date">2021.06.25</span>
+                                            </div>
+                                            <div class="news-list-body">
+                                                가치를 인간에 우리 위하여서. 거선의 무엇이 붙잡아 웅대한 싸인 든 피다. 인류의 우리는 청춘에서만 할지니,
+                                                인간에 두손을 공자는 뿐이다. 이것이야말로 동력은 새가 꾸며 힘차게 할지니,
+                                                일월과 교향악이다. 있을 동산에는 할지라도 든 우리의 유소년에게서 밝은 이상 것이다.
+                                                있는 길지 있는 바이며, 새가 이상 없으면 사막이다. 가슴이 얼마나 소담스러운 미묘한 있을 것은 구할 생생하며, 사막이다...
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="news-list-header">
+                                                <div class="d-flex align-center">
+                                                    <span class="badge badge-white">중앙일보</span>
+                                                    <h4>오세훈표 ‘취약층 무료 인강’ ... “사교육 조장”틀어막는 ...</h4>
+                                                </div>
+                                                <span class="news-date">2021.06.25</span>
+                                            </div>
+                                            <div class="news-list-body">
+                                                가치를 인간에 우리 위하여서. 거선의 무엇이 붙잡아 웅대한 싸인 든 피다. 인류의 우리는 청춘에서만 할지니,
+                                                인간에 두손을 공자는 뿐이다. 이것이야말로 동력은 새가 꾸며 힘차게 할지니,
+                                                일월과 교향악이다. 있을 동산에는 할지라도 든 우리의 유소년에게서 밝은 이상 것이다.
+                                                있는 길지 있는 바이며, 새가 이상 없으면 사막이다. 가슴이 얼마나 소담스러운 미묘한 있을 것은 구할 생생하며, 사막이다...
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paginate">
+                            <a href="#" class="forward"><i class="icon icon-arrow-double-prev"></i></a>
+                            <a href="#" class="prev"><i class="icon icon-arrow-prev"></i></a>
+                            <a href="#" class="on">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#" class="next"><i class="icon icon-arrow-next"></i></a>
+                            <a href="#" class="backward"><i class="icon icon-arrow-double-next"></i></a>
+                        </div>
+                    </div>
+                    <div class="w50p">
+                        <div class="card-wrap tech-news">
+                            <div class="card-item">
+                                <div class="chart-header">
+                                    <label>R&D 인사이트</label>
+                                    <a href="#"></a>
+                                </div>
+                                <div class="chart-body">
+                                    <div class="chart temp" style="height:524px;">chart area</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $('.search-detail-open').click(function(){
+            $('.search-detail').slideToggle(200)
+        })
+    })
+</script>
+</body>
+</html>

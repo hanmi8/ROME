@@ -1,0 +1,95 @@
+<ul class="nav">
+    <li class="on"><a href="tech_trend.html?menuId=01" data-target="01">기술동향</a></li>
+    <li>
+        <a href="#">R&D Finder</a>
+        <ul class="depth-second">
+            <li><a href="rnd_finder_company.html?menuId=11" data-target="11">기업 검색</a></li>
+            <li><a href="rnd_finder_group.html?menuId=12" data-target="12">그룹 검색</a></li>
+        </ul>
+    </li><li>
+    <a href="#">무역통계기반 유망품목발굴</a>
+    <ul class="depth-second">
+        <li><a href="trade_system_overview.html?menuId=51" data-target="51">시스템 개요</a></li>
+        <li><a href="trade_hs.html?menuId=52" data-target="52">무역거래품목코드(HS)</a></li>
+        <li><a href="#">무역통계지수(index)</a>
+            <ul class="depth-third">
+                <li><a href="trade_index_gvc.html?menuId=53" data-target="53">GVC Index 설명</a></li>
+                <li><a href="trade_index_value.html?menuId=54" data-target="54">상품고부가가치 지수</a></li>
+                <li><a href="trade_index_dependence.html?menuId=55" data-target="55">수입의존도</a></li>
+            </ul>
+        </li>
+        <li><a href="#">무역시장분석(Target)</a>
+            <ul class="depth-third">
+                <li><a href="trade_target_overview.html?menuId=56" data-target="56">Targeting 설명</a></li>
+                <li><a href="trade_target_market.html?menuId=57" data-target="57">미ㆍ중시장분석</a></li>
+                <li><a href="trade_target_domestic.html?menuId=58" data-target="58">국내 수입품목 분석</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
+    <li>
+        <a href="#">특허기반 유망분야</a>
+        <ul class="depth-second">
+            <li><a href="patent_rnd.html?menuId=21" data-target="21">산업기술 R&D 전략분야</a></li>
+            <li><a href="patent_field.html?menuId=22" data-target="22">분야별 출원현황</a></li>
+            <li><a href="patent_analysis.html?menuId=23" data-target="23">주요출원인 분석</a></li>
+            <li><a href="patent_tech_improvement.html?menuId=24" data-target="24">기술 부상도</a></li>
+            <li><a href="patent_easyEntry.html?menuId=25" data-target="25">진입 용이성</a></li>
+            <li><a href="patent_tech_level.html?menuId=26" data-target="26">기술 수준</a></li>
+            <li><a href="patent_tech_result.html?menuId=27" data-target="27">기술성 종합결과</a></li>
+            <li><a href="patent_specific_result.html?menuId=28" data-target="28">분야별 특허지표 측정결과</a></li>
+            <li><a href="patent_korea_analysis.html?menuId=29" data-target="29">우리나라의 기술 경쟁력 분석</a></li>
+            <li><a href="patent_free_analysis.html?menuId=200" data-target="200">자율분석</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">사업현황</a>
+        <ul class="depth-second">
+            <li><a href="business_index.html?menuId=30" data-target="30">현황판</a></li>
+            <li><a href="business_01.html?menuId=31" data-target="31">사업현황</a></li>
+            <li><a href="business_02.html?menuId=32" data-target="32">사업 예산 시뮬레이션</a></li>
+            <li><a href="business_03.html?menuId=33" data-target="33">사업별 (기획)상세현황</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">디지털 라이브러리</a>
+        <ul class="depth-second">
+            <li><a href="digital_know_where.html?menuId=41" data-target="41">Know Where</a></li>
+            <li><a href="digital_know_how.html?menuId=42" data-target="42">Know How</a></li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    $(function () {
+
+        $('.nav-wrap').css('min-height', $(window).height() - $('.nav-wrap').offset().top)
+        $('.nav').find('a').click(function () {
+            $(this).parent('li').siblings('li').removeClass('on')
+            $(this).parent('li').siblings('li').find('ul').slideUp(200)
+            if ($(this).parent('li').hasClass('on')) {
+                $(this).next('ul').slideUp(200)
+                $(this).parent('li').removeClass('on')
+            } else {
+                $(this).next('ul').slideDown(200)
+                $(this).parent('li').addClass('on')
+            }
+        })
+
+        var paramsString = window.location.href
+        var searchParams = new URLSearchParams(paramsString);
+        var menuIDnum = '';
+
+        for (let p of searchParams) {
+            console.log(searchParams)
+            menuIDnum = p[1]
+        }
+
+        $('.nav').find('a').each(function(){
+            if($(this).attr('data-target') === menuIDnum){
+                $('.nav').find('li').removeClass('on')
+                $(this).parents('li').addClass('on')
+            }
+        })
+    })
+</script>

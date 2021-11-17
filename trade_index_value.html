@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>상품고부가가치 지수 | 무역통계지수(index) | 무역통계기반 유망품목발굴 | Home</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/component.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="top-wrap">
+        <div class="logo"><a href="index.html"><img src="assets/images/logo_new.png"></a></div>
+        <div class="user-info">
+            <strong>kumuka80 <span class="caret"></span></strong>
+            <div class="arrow"><img src="assets/images/top_arrow_right.png"></div>
+        </div>
+    </div>
+    <div class="body-wrap">
+        <div class="nav-wrap">
+            <div class="include" id="gnb"></div>
+        </div>
+        <div class="container">
+            <div class="container-header">
+                <ul class="tabs">
+                    <li class="on"><a href="#tab1">설명</a></li>
+                    <li><a href="#tab2">검색</a></li>
+                </ul>
+                <div class="location">
+                    <a href="#" class="home">Home</a>
+                    <a href="#">무역통계기반 유망품목발굴<span class="icon icon-caret"></span></a>
+                    <a href="#">무역통계지수(index)<span class="icon icon-caret"></span></a>
+                    <a href="#" class="active">상품고부가가치 지수<span class="icon icon-caret-white"></span></a>
+                </div>
+            </div>
+            <div class="tab-contents" id="tab1" style="display:block;">
+                <div class="overview-header gvc">
+                    <h1>상품고부가가치지수(Prody Index)의 개념</h1>
+                </div>
+                <dl class="overview-body">
+                    <dt>정의</dt>
+                    <dd class="border-bottom mb-24">국제무역거래상품 중에서 부가가치 수준을 나타내는 지표로, <span class="text-info">한 국가의 국민소득수준을 고려하여 자체 개발 및 생산에 경제성이 있는지 여부를 판단할 때 사용 가능한 지수</span></dd>
+                    <dt>산식</dt>
+                    <dd>Prody Index(k) =<img src="assets/images/img_gvc_01.png"><br>
+                        <strong>subject to <img src="assets/images/img_gvc_02.png"></strong>
+                    </dd>
+                    <dd>세계시장에서 어느 국가(j)의 상품(k)에 비교우위(<img src="assets/images/img_gvc_03.png">)을 가중치로 하여 1인당 GDP(Y)를 합산한 값으로</dd>
+                    <dd class="border-bottom mb-24">1인당 GDP는 생산성 및 부가가치를 대표하는 지수이므로 Prody Index는 해당 상품의 부가가치 수준을 나타냄</dd>
+                    <dt>활용</dt>
+                    <dd>Prody Index가 높은 상품이 선진국에서 주로 생산하는 상품이며, 이는 노동비용을 상쇄할 정도로 고부가가치 상품임을 의미</dd>
+                    <dd>만일 Prody Index 값이 3만 이상이면, 1인당 국민소득이 3만달러 이상인 국가에서 생산하여 수출하여도 노동비용 등을 고려할 때 경제성이 있다는 의미</dd>
+                    <dd>반대로 Prody Index 값이 3만 이하인 상품은 국민소득이 3만달러 이상인 국가에서 생산하기에 경제성 측면에서 부적합하다는 의미</dd>
+                </dl>
+            </div>
+            <div class="tab-contents" id="tab2" style="display:none;">
+                <div class="search-wrap mb-30">
+                    <div class="form-horizontal input-wrap">
+                        <div class="form-group w100p">
+                            <label class="control-label primary" style="width:126px;">HS 코드</label>
+                            <div class="form-input-wrap">
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:500px">
+                            </div>
+                            <label class="control-label primary" style="width:126px;">Prody Index</label>
+                            <div class="form-input-wrap terms min-max">
+                                <strong>Min</strong>
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
+                                <span>~</span>
+                                <strong>Max</strong>
+                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-horizontal input-wrap">
+                        <div class="form-group w100p">
+                            <label class="control-label primary" style="width:126px;">키워드</label>
+                            <div class="dropdown mr-16" style="width:150px;">
+                                <strong class="dropdown-toggle">전체</strong>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                            <input type="text" class="form-control" style="width:500px;">
+                        </div>
+                        <button class="btn-search"></button>
+                    </div>
+                </div>
+                <dl class="overview-body">
+                    <dt>검색 방법</dt>
+                    <dd>품목코드(HS Code) : R&D기획의 대상이 되는 특정 품목(HS 코드)의 Prody Index를 검색</dd>
+                    <dd>키워드 검색 : 상품명, MTI산업명, KSIC산업명 내 키워드로 검색</dd>
+                    <dd>Prody Index : 특정 범위에 해당하는 품목들을 추출</dd>
+                </dl>
+                <div class="btn-wrap text-right mb-24"><button class="btn btn-white btn-small hover-black"><i class="icon icon-file-xls left"></i>엑셀다운로드</button></div>
+                <table class="table-vertical px-8">
+                    <colgroup>
+                        <col width="216px">
+                        <col width="216px">
+                        <col width="216px">
+                        <col width="">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>HS 코드</th>
+                        <th>상품명</th>
+                        <th>Prody Index</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="text-left">280530</td>
+                        <td class="text-left">희토류금속</td>
+                        <td class="text-right">1,545,444</td>
+                        <td class="text-left">Rare-earth metals, scandium & yttrium, whether/not intermixed/interalloyed</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">280530</td>
+                        <td class="text-left">희토류금속</td>
+                        <td class="text-right">1,545,444</td>
+                        <td class="text-left">Rare-earth metals, scandium & yttrium, whether/not intermixed/interalloyed</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">280530</td>
+                        <td class="text-left">희토류금속</td>
+                        <td class="text-right">1,545,444</td>
+                        <td class="text-left">Rare-earth metals, scandium & yttrium, whether/not intermixed/interalloyed</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">280530</td>
+                        <td class="text-left">희토류금속</td>
+                        <td class="text-right">1,545,444</td>
+                        <td class="text-left">Rare-earth metals, scandium & yttrium, whether/not intermixed/interalloyed</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">280530</td>
+                        <td class="text-left">희토류금속</td>
+                        <td class="text-right">1,545,444</td>
+                        <td class="text-left">Rare-earth metals, scandium & yttrium, whether/not intermixed/interalloyed</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">280530</td>
+                        <td class="text-left">희토류금속</td>
+                        <td class="text-right">1,545,444</td>
+                        <td class="text-left">Rare-earth metals, scandium & yttrium, whether/not intermixed/interalloyed</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">280530</td>
+                        <td class="text-left">희토류금속</td>
+                        <td class="text-right">1,545,444</td>
+                        <td class="text-left">Rare-earth metals, scandium & yttrium, whether/not intermixed/interalloyed</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">280530</td>
+                        <td class="text-left">희토류금속</td>
+                        <td class="text-right">1,545,444</td>
+                        <td class="text-left">Rare-earth metals, scandium & yttrium, whether/not intermixed/interalloyed</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">280530</td>
+                        <td class="text-left">희토류금속</td>
+                        <td class="text-right">1,545,444</td>
+                        <td class="text-left">Rare-earth metals, scandium & yttrium, whether/not intermixed/interalloyed</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">280530</td>
+                        <td class="text-left">희토류금속</td>
+                        <td class="text-right">1,545,444</td>
+                        <td class="text-left">Rare-earth metals, scandium & yttrium, whether/not intermixed/interalloyed</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paginate">
+                    <a href="#" class="forward"><i class="icon icon-arrow-double-prev"></i></a>
+                    <a href="#" class="prev"><i class="icon icon-arrow-prev"></i></a>
+                    <a href="#" class="on">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="next"><i class="icon icon-arrow-next"></i></a>
+                    <a href="#" class="backward"><i class="icon icon-arrow-double-next"></i></a>
+                </div>
+                <ul class="explanatory mt-32">
+                    <li>* HS 코드 : 무역거래상품분류 코드</li>
+                    <li>* MTI : 산업부의 수출입품목분류</li>
+                    <li>* KSI : 한국표준산업분류</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

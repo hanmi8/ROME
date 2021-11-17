@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Know Where | 디지털 라이브러리 | Home</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/component.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="top-wrap">
+        <div class="logo"><a href="index.html"><img src="assets/images/logo_new.png"></a></div>
+        <div class="user-info">
+            <strong>kumuka80 <span class="caret"></span></strong>
+            <div class="arrow"><img src="assets/images/top_arrow_right.png"></div>
+        </div>
+    </div>
+    <div class="body-wrap">
+        <div class="nav-wrap">
+            <div class="include" id="gnb"></div>
+        </div>
+        <div class="container">
+            <div class="container-header">
+                <div class="location">
+                    <a href="#" class="home">Home</a>
+                    <a href="#">디지털 라이브러리<span class="icon icon-caret"></span></a>
+                    <a href="#" class="active">Know Where<span class="icon icon-caret-white"></span></a>
+                </div>
+            </div>
+            <div class="search-wrap mb-32">
+                <div class="form-horizontal input-wrap">
+                    <div class="form-group">
+                        <label class="control-label primary" style="width:166px">분류 선택</label>
+                        <div class="dropdown mr-8" style="width:320px;">
+                            <strong class="dropdown-toggle">대분류</strong>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">기획</a></li>
+                                <li><a href="#">선정</a></li>
+                                <li><a href="#">관리</a></li>
+                                <li><a href="#">기타</a></li>
+                                <li><a href="#directInput">직접입력</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown mr-8" style="width:320px;">
+                            <strong class="dropdown-toggle">중분류</strong>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown" style="width:320px;">
+                            <strong class="dropdown-toggle">소분류</strong>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-wrap d-flex align-center">
+                        <button class="btn btn-blue btn-lg mr-8"><i class="icon icon-plus-circle left"></i>추가 및 수정</button>
+                        <button class="btn btn-danger btn-lg"><i class="icon icon-plus-circle left"></i>삭제</button>
+                        <button class="btn-search"></button>
+                    </div>
+                </div>
+                <div class="form-horizontal input-wrap direct-input" style="display:none;">
+                    <div class="form-group">
+                        <label class="control-label" style="width:166px"></label>
+                        <input class="form-control mr-8" style="width:320px;">
+                        <input class="form-control mr-8" style="width:320px;">
+                        <input class="form-control mr-8" style="width:320px;">
+                    </div>
+                </div>
+                <div class="form-horizontal input-wrap">
+                    <div class="form-group w100p">
+                        <label class="control-label primary" style="width:166px">정보획득가능사이트</label>
+                        <div class="form-input-wrap" style="width:calc(100% - 198px)">
+                            <input type="text" class="form-control"placeholder="입력 전">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-horizontal input-wrap">
+                    <div class="form-group w100p">
+                        <label class="control-label primary" style="width:166px">접속링크</label>
+                        <div class="form-input-wrap w100p" style="width:calc(100% - 198px)">
+                            <input type="text" class="form-control"placeholder="입력 전">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-horizontal input-wrap">
+                    <div class="form-group w100p">
+                        <label class="control-label primary" style="width:166px">정보제목</label>
+                        <div class="form-input-wrap w100p" style="width:calc(100% - 198px)">
+                            <input type="text" class="form-control"placeholder="입력 전">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-horizontal input-wrap">
+                    <div class="form-group w100p">
+                        <label class="control-label primary" style="width:166px">내용 및 특이사항</label>
+                        <div class="form-input-wrap w100p" style="width:calc(100% - 198px)">
+                            <input type="text" class="form-control"placeholder="입력 전">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-horizontal input-wrap">
+                    <div class="form-group" style="width:calc(100% - 96px - 8px)">
+                        <label class="control-label primary" style="width:166px">첨부파일</label>
+                        <div class="form-input-wrap" style="width:calc(100% - 198px)">
+                            <input type="text" class="form-control"placeholder="입력 전">
+                        </div>
+                    </div>
+                    <button class="btn btn-royalblue"><i class="icon icon-plus-circle left"></i> 파일추가</button>
+                </div>
+            </div>
+            <div class="section mb-32">
+                <div class="btn-wrap text-right mb-24"><button class="btn btn-white btn-small hover-black"><i class="icon icon-file-xls left"></i>엑셀다운로드</button></div>
+                <table class="table-vertical px-8">
+                    <colgroup>
+                        <col width="60px">
+                        <col width="75px">
+                        <col width="84px">
+                        <col width="194px">
+                        <col width="164px">
+                        <col width="294px">
+                        <col width="265px">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>대분류</th>
+                        <th>중분류</th>
+                        <th>소분류</th>
+                        <th>정보획득 가능 사이트</th>
+                        <th>정보내용</th>
+                        <th>접속링크</th>
+                        <th>내용 및 특이사항</th>
+                        <th>첨부파일</th>
+                        <th>작성자(작성일)</th>
+                        <th>최종 수정자</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td rowspan="7">기획</td>
+                        <td rowspan="2">대내외 환경 전망</td>
+                        <td rowspan="2">미래예측</td>
+                        <td class="text-left">국회미래연구원 / 연구보고서</td>
+                        <td class="text-left">중장기 미래예측 보고서</td>
+                        <td class="text-left"><div class="copy-url">https://www.nafi.re.kr<button class="btn btn-x-small btn-copy">복사</button></div></td>
+                        <td class="text-left">중장기 매래연구보고서 78건(2018~2020)</td>
+                        <td class="text-left"><div class="file-wrap hwp">미래예측을 위한 새로...hwp</div></td>
+                        <td class="text-left">홍길동(2021.07.10), 성춘향(2021.10.05)</td>
+                        <td>조성호 (2021.10.05)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">국회미래연구원 / 미래서평</td>
+                        <td class="text-left">국내외 미래관련 서적</td>
+                        <td class="text-left"><div class="copy-url">https://www.nafi.re.kr/new/trend.do<button class="btn btn-x-small btn-copy">복사</button></div></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"><div class="file-wrap pdf">미래예측.pdf</div></td>
+                        <td class="text-left">홍길동(2021.07.10)</td>
+                        <td>조성호 (2021.10.05)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">대내외 환경 분석</td>
+                        <td class="text-left">기술</td>
+                        <td class="text-left">중소기업진흥업/기술로드맵</td>
+                        <td class="text-left">중소기업 기술 로드맵</td>
+                        <td class="text-left"><div class="copy-url">https://tablericons.com/<button class="btn btn-x-small btn-copy">복사</button></div></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">특허</td>
+                        <td class="text-left">KIPRIS / 특허 DB</td>
+                        <td class="text-left">특허검색</td>
+                        <td class="text-left"><div class="copy-url">https://www.youtube.com/<button class="btn btn-x-small btn-copy">복사</button></div></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">기업</td>
+                        <td class="text-left">DART</td>
+                        <td class="text-left">기업정보 전자공지</td>
+                        <td class="text-left"><div class="copy-url">https://www.youtube.com/watc_Ea...<button class="btn btn-x-small btn-copy">복사</button></div></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">산업</td>
+                        <td class="text-left">KEIT/산업별정보/산업별자료</td>
+                        <td class="text-left">주력, 신성장동력</td>
+                        <td class="text-left"><div class="copy-url">https://www.nafi.re.kr<button class="btn btn-x-small btn-copy">복사</button></div></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">시장</td>
+                        <td class="text-left">Marketresearch.com</td>
+                        <td class="text-left">시장조사보고서</td>
+                        <td class="text-left"><div class="copy-url">https://www.nafi.re.kr/new/trend.do<button class="btn btn-x-small btn-copy">복사</button></div></td>
+                        <td class="text-left">상세보고서는 비용 과금</td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">선정</td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">관리</td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">기타</td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="paginate">
+                    <a href="#" class="forward"><i class="icon icon-arrow-double-prev"></i></a>
+                    <a href="#" class="prev"><i class="icon icon-arrow-prev"></i></a>
+                    <a href="#" class="on">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="next"><i class="icon icon-arrow-next"></i></a>
+                    <a href="#" class="backward"><i class="icon icon-arrow-double-next"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-layer" id="nationTop3" style="width:278px;">
+            <div class="layer-header">
+                <h3>다출원 상위 3개국</h3>
+                <span class="layer-close"><i class="icon icon-times-white"></i></span>
+            </div>
+            <div class="layer-body px-16 mb-32">
+                <h4 class="mt-24 mb-16">구동 및 전력변환 기술 (AA)</h4>
+                <table class="table-vertical">
+                    <thead>
+                    <tr>
+                        <th>국가</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>미국</td>
+                    </tr>
+                    <tr>
+                        <td>일본</td>
+                    </tr>
+                    <tr>
+                        <td>중국</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script>
+    $(function(){
+        $('.dropdown-menu li a').click(function(){
+            if($(this).attr('href') === '#directInput'){
+                $('.direct-input').slideDown({
+                    start: function() {
+                        $(this).css('display','flex')
+                    }
+                }, 100)
+            }else{
+                $('.direct-input').slideUp(200)
+            }
+        })
+    })
+</script>

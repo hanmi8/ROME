@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ROME</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/component.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper index">
+    <div class="visual">
+        <video muted autoplay loop>
+            <source src="assets/images/index_mov.mp4" type="video/mp4">
+        </video>
+        <div class="logo"><a href="index.html"><img src="assets/images/logo_new.png"></a></div>
+        <div class="search-zone">
+            <label>기술동향 검색</label>
+            <input type="text" placeholder="검색어를 입력하세요.">
+            <button><i class="icon icon-search"></i> SEARCH</button>
+        </div>
+    </div>
+    <div class="direct-icon-zone">
+        <ul>
+            <li><a href="rnd_finder_company.html?menuId=11" data-target="11"><label>R&D  Finder</label><img src="assets/images/mico_1.png"></a></li>
+            <li><a href="patent_rnd.html?menuId=21" data-target="21"><label>특허기반 유망분야</label><img src="assets/images/mico_2.png"></a></li>
+            <li><a href="business_index.html?menuId=30" data-target="30"><label>사업현황</label><img src="assets/images/mico_3.png"></a></li>
+            <li><a href="digital_know_where.html?menuId=41" data-target="41"><label>디지털 라이브러리</label><img src="assets/images/mico_4.png"></a></li>
+            <li><a href="trade_system_overview.html?menuId=51" data-target="51"><label>무역통계기반 유망품목발굴</label><img src="assets/images/mico_5.png"></a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    $(function(){
+        $('.direct-icon-zone').css('height', $(window).height() - $('.direct-icon-zone').offset().top)
+    })
+</script>
+</body>
+</html>
