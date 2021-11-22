@@ -5,9 +5,11 @@
     <title>상품고부가가치 지수 | 무역통계지수(index) | 무역통계기반 유망품목발굴 | Home</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/component.css">
     <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/js/common.js"></script>
 </head>
 <body>
@@ -30,10 +32,35 @@
                     <li><a href="#tab2">검색</a></li>
                 </ul>
                 <div class="location">
-                    <a href="#" class="home">Home</a>
-                    <a href="#">무역통계기반 유망품목발굴<span class="icon icon-caret"></span></a>
-                    <a href="#">무역통계지수(index)<span class="icon icon-caret"></span></a>
-                    <a href="#" class="active">상품고부가가치 지수<span class="icon icon-caret-white"></span></a>
+                    <a href="index.html" class="home">Home</a>
+                    <div class="location-dropdown">
+                        <strong>무역통계기반 유망품목발굴<span class="icon icon-caret"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="tech_trend.html">기술동향</a></li>
+                            <li><a href="rnd_finder_company.html">R&D Finder</a></li>
+                            <li><a href="trade_system_overview.html">무역통계기반 유망품목발굴</a></li>
+                            <li><a href="patent_rnd.html">특허기반 유망분야</a></li>
+                            <li><a href="business_index.html">사업현황</a></li>
+                            <li><a href="digital_know_where.html">디지털 라이브러리</a></li>
+                        </ul>
+                    </div>
+                    <div class="location-dropdown">
+                        <strong>무역통계지수(index) <span class="icon icon-caret-white"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="trade_system_overview.html">시스템 개요</a></li>
+                            <li><a href="trade_hs.html">무역거래품목코드(HS)</a></li>
+                            <li><a href="trade_index_gvc.html">무역통계지수(index)</a></li>
+                            <li><a href="trade_target_overview.html">무역시장분석(Target)</a></li>
+                        </ul>
+                    </div>
+                    <div class="location-dropdown sub">
+                        <strong>상품고부가가치 지수<span class="icon icon-caret-white"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="trade_index_gvc.html">GVC Index 설명</a></li>
+                            <li><a href="trade_index_value.html">상품고부가가치 지수</a></li>
+                            <li><a href="trade_index_dependence.html">수입의존도</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="tab-contents" id="tab1" style="display:block;">
@@ -44,10 +71,10 @@
                     <dt>정의</dt>
                     <dd class="border-bottom mb-24">국제무역거래상품 중에서 부가가치 수준을 나타내는 지표로, <span class="text-info">한 국가의 국민소득수준을 고려하여 자체 개발 및 생산에 경제성이 있는지 여부를 판단할 때 사용 가능한 지수</span></dd>
                     <dt>산식</dt>
-                    <dd>Prody Index(k) =<img src="assets/images/img_gvc_01.png"><br>
+                    <dd class="formula_01">Prody Index(k) =<img src="assets/images/img_gvc_01.png"><br>
                         <strong>subject to <img src="assets/images/img_gvc_02.png"></strong>
                     </dd>
-                    <dd>세계시장에서 어느 국가(j)의 상품(k)에 비교우위(<img src="assets/images/img_gvc_03.png">)을 가중치로 하여 1인당 GDP(Y)를 합산한 값으로</dd>
+                    <dd class="formula_02">세계시장에서 어느 국가(j)의 상품(k)에 비교우위(<img src="assets/images/img_gvc_03.png">)을 가중치로 하여 1인당 GDP(Y)를 합산한 값으로</dd>
                     <dd class="border-bottom mb-24">1인당 GDP는 생산성 및 부가가치를 대표하는 지수이므로 Prody Index는 해당 상품의 부가가치 수준을 나타냄</dd>
                     <dt>활용</dt>
                     <dd>Prody Index가 높은 상품이 선진국에서 주로 생산하는 상품이며, 이는 노동비용을 상쇄할 정도로 고부가가치 상품임을 의미</dd>
@@ -64,12 +91,10 @@
                                 <input type="text" class="form-control" placeholder="입력 전" style="width:500px">
                             </div>
                             <label class="control-label primary" style="width:126px;">Prody Index</label>
-                            <div class="form-input-wrap terms min-max">
-                                <strong>Min</strong>
-                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
-                                <span>~</span>
-                                <strong>Max</strong>
-                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
+                            <div class="slider-wrap">
+                                <input type="text" class="form-control slider-min" id="prody_index_min">
+                                <div class="slider-range" id="prody_index_range"></div>
+                                <input type="text" class="form-control slider-max" placeholder="Max" id="prody_index_max">
                             </div>
                         </div>
                     </div>

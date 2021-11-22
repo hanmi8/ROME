@@ -5,9 +5,11 @@
     <title>분야별 특허지표 측정결과 | 특허기반 유망분야 | Home</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/component.css">
     <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/js/common.js"></script>
 </head>
 <body>
@@ -26,9 +28,33 @@
         <div class="container">
             <div class="container-header">
                 <div class="location">
-                    <a href="#" class="home">Home</a>
-                    <a href="#">특허기반 유망분야<span class="icon icon-caret"></span></a>
-                    <a href="#" class="active">분야별 특허지표 측정결과<span class="icon icon-caret-white"></span></a>
+                    <a href="index.html" class="home">Home</a>
+                    <div class="location-dropdown">
+                        <strong>특허기반 유망분야<span class="icon icon-caret"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="tech_trend.html">기술동향</a></li>
+                            <li><a href="rnd_finder_company.html">R&D Finder</a></li>
+                            <li><a href="trade_system_overview.html">무역통계기반 유망품목발굴</a></li>
+                            <li><a href="patent_rnd.html">특허기반 유망분야</a></li>
+                            <li><a href="business_index.html">사업현황</a></li>
+                            <li><a href="digital_know_where.html">디지털 라이브러리</a></li>
+                        </ul>
+                    </div>
+                    <div class="location-dropdown sub">
+                        <strong>분야별 특허지표 측정결과<span class="icon icon-caret-white"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="patent_rnd.html">산업기술 R&D 전략분야</a></li>
+                            <li><a href="patent_field.html">분야별 출원현황</a></li>
+                            <li><a href="patent_analysis.html">주요출원인 분석</a></li>
+                            <li><a href="patent_tech_improvement.html">기술 부상도</a></li>
+                            <li><a href="patent_easyEntry.html">진입 용이성</a></li>
+                            <li><a href="patent_tech_level.html">기술 수준</a></li>
+                            <li><a href="patent_tech_result.html">기술성 종합결과</a></li>
+                            <li><a href="patent_specific_result.html">분야별 특허지표 측정결과</a></li>
+                            <li><a href="patent_korea_analysis.html">우리나라의 기술 경쟁력 분석</a></li>
+                            <li><a href="patent_free_analysis.html">자율분석</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="search-wrap mb-32">
@@ -251,36 +277,6 @@
                 </table>
             </div>
         </div>
-
-        <div class="popup-layer" id="nationTop3" style="width:278px;">
-            <div class="layer-header">
-                <h3>다출원 상위 3개국</h3>
-                <span class="layer-close"><i class="icon icon-times-white"></i></span>
-            </div>
-            <div class="layer-body px-16 mb-32">
-                <h4 class="mt-24 mb-16">구동 및 전력변환 기술 (AA)</h4>
-                <table class="table-vertical">
-                    <thead>
-                    <tr>
-                        <th>국가</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>미국</td>
-                    </tr>
-                    <tr>
-                        <td>일본</td>
-                    </tr>
-                    <tr>
-                        <td>중국</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 </body>

@@ -5,9 +5,11 @@
     <title>내역사업등록 | 사업별 (기획)상세현황 | 사업현황 | Home</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/component.css">
     <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/js/common.js"></script>
 </head>
 <body>
@@ -26,9 +28,27 @@
         <div class="container">
             <div class="container-header">
                 <div class="location">
-                    <a href="#" class="home">Home</a>
-                    <a href="#">사업현황<span class="icon icon-caret"></span></a>
-                    <a href="#" class="active">사업별 (기획)상세현황<span class="icon icon-caret-white"></span></a>
+                    <a href="index.html" class="home">Home</a>
+                    <div class="location-dropdown">
+                        <strong>R&D Finder<span class="icon icon-caret"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="tech_trend.html">기술동향</a></li>
+                            <li><a href="rnd_finder_company.html">R&D Finder</a></li>
+                            <li><a href="trade_system_overview.html">무역통계기반 유망품목발굴</a></li>
+                            <li><a href="patent_rnd.html">특허기반 유망분야</a></li>
+                            <li><a href="business_index.html">사업현황</a></li>
+                            <li><a href="digital_know_where.html">디지털 라이브러리</a></li>
+                        </ul>
+                    </div>
+                    <div class="location-dropdown sub">
+                        <strong>사업별 (기획)상세현황<span class="icon icon-caret-white"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="business_index.html">현황판</a></li>
+                            <li><a href="business_01.html">사업현황</a></li>
+                            <li><a href="business_02.html">사업 예산 시뮬레이션</a></li>
+                            <li><a href="business_03.html">사업별 (기획)상세현황</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="border-dark-top mb-48"></div>
@@ -52,7 +72,7 @@
                         <td>
                             <div class="d-flex">
                                 <input type="text" class="form-control" value="바이오헬스기술개발">
-                                <button class="btn btn-primary ml-8">
+                                <button class="btn btn-primary ml-8 modal-call" data-target="#find_unit_business">
                                     <i class="icon icon-plus-circle left"></i> 찾기
                                 </button>
                             </div>
@@ -71,7 +91,7 @@
                         <td colspan="3">
                             <div class="d-flex">
                                 <input type="text" class="form-control" value="입력 후">
-                                <button class="btn btn-primary ml-8">
+                                <button class="btn btn-primary ml-8 modal-call" data-target="#find_detail_business">
                                     <i class="icon icon-plus-circle left"></i> 찾기
                                 </button>
                             </div>
@@ -669,6 +689,160 @@
                     <button class="btn btn-primary btn-lg-square"><i class="icon icon-save left"></i>저장하기</button>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- 단위사업 찾기 -->
+<div class="modal" id="find_unit_business">
+    <div class="modal-dialog modal-middle">
+        <div class="modal-header">
+            <h2>프로그램/단위사업</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <table class="table-vertical px-8">
+                <colgroup>
+                    <col width="50%">
+                    <col width="50%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>프로그램</th>
+                    <th>단위사업</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="dropdown sub">
+                            <strong class="dropdown-toggle">신신사업</strong>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown sub">
+                            <strong class="dropdown-toggle">직접입력</strong>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control mt-8" placeholder="입력 전">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-white modal-close">취소</button>
+            <button class="btn btn-primary">확인</button>
+        </div>
+    </div>
+</div>
+
+<!-- 기존 세부사업 찾기 -->
+<div class="modal" id="find_detail_business">
+    <div class="modal-dialog modal-xlarge">
+        <div class="modal-header">
+            <h2>기존 세부사업 조회</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="form-horizontal system">
+                <div class="form-group w100p mr-0">
+                    <label class="label-caret">세부사업명</label>
+                    <input type="text" class="form-control" style="width:calc(100% - 180px);margin-right:4px;">
+                    <button class="btn btn-darkgray"><i class="icon icon-search left"></i>조회</button>
+                </div>
+            </div>
+            <div class="mt-24">
+                <h4 class="mb-16">사업정보</h4>
+                <table class="table-vertical px-8">
+                    <colgroup>
+                        <col width="73px">
+                        <col width="159px">
+                        <col width="126px">
+                        <col width="*">
+                        <col width="*">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>선택</th>
+                        <th>프로그램명</th>
+                        <th>단위사업명</th>
+                        <th>세부사업명</th>
+                        <th>내역사업명</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="icon-radio" data-name="group1"></span></td>
+                        <td class="text-left">산업경쟁력기반구축</td>
+                        <td class="text-left">산업기술기반구축</td>
+                        <td class="text-left">제조분야미세먼지감축을위한공정맞춤형실용화기술개발사업</td>
+                        <td class="text-left">제조분야미세먼지감축을위한공정맞춤형실용화기술개발사업</td>
+                    </tr>
+                    <tr>
+                        <td><span class="icon-radio" data-name="group1"></span></td>
+                        <td class="text-left">산업경쟁력기반구축</td>
+                        <td class="text-left">산업기술기반구축</td>
+                        <td class="text-left">제조분야미세먼지감축을위한공정맞춤형실용화기술개발사업</td>
+                        <td class="text-left">제조분야미세먼지감축을위한공정맞춤형실용화기술개발사업</td>
+                    </tr>
+                    <tr>
+                        <td><span class="icon-radio" data-name="group1"></span></td>
+                        <td class="text-left">산업경쟁력기반구축</td>
+                        <td class="text-left">산업기술기반구축</td>
+                        <td class="text-left">제조분야미세먼지감축을위한공정맞춤형실용화기술개발사업</td>
+                        <td class="text-left">제조분야미세먼지감축을위한공정맞춤형실용화기술개발사업</td>
+                    </tr>
+                    <tr>
+                        <td><span class="icon-radio" data-name="group1"></span></td>
+                        <td class="text-left">산업경쟁력기반구축</td>
+                        <td class="text-left">산업기술기반구축</td>
+                        <td class="text-left">제조분야미세먼지감축을위한공정맞춤형실용화기술개발사업</td>
+                        <td class="text-left">제조분야미세먼지감축을위한공정맞춤형실용화기술개발사업</td>
+                    </tr>
+                    <tr>
+                        <td><span class="icon-radio" data-name="group1"></span></td>
+                        <td class="text-left">산업경쟁력기반구축</td>
+                        <td class="text-left">산업기술기반구축</td>
+                        <td class="text-left">제조분야미세먼지감축을위한공정맞춤형실용화기술개발사업</td>
+                        <td class="text-left">제조분야미세먼지감축을위한공정맞춤형실용화기술개발사업</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-white modal-close">취소</button>
+            <button class="btn btn-primary modal-call" data-target="#copy_confirm">확인</button>
+        </div>
+    </div>
+</div>
+
+<!-- 복사 -->
+<div class="modal" id="copy_confirm">
+    <div class="modal-dialog modal-small">
+        <div class="modal-header">
+            <h2>confirm</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="text-center">
+                <div class="governing copy">기존 세부 사업 내용을 복사하시겠습니까?</div>
+                <div class="copy-process">
+                    <strong class="img copy-origin"></strong>
+                    <span class="arrow"></span>
+                    <strong class="img copy-copy"></strong>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-white modal-close">취소</button>
+            <button class="btn btn-primary">확인</button>
         </div>
     </div>
 </div>

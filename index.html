@@ -5,9 +5,11 @@
     <title>ROME</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/component.css">
     <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/js/common.js"></script>
 </head>
 <body>
@@ -35,7 +37,7 @@
 </div>
 <script>
     $(function(){
-        $('.direct-icon-zone').css('height', $(window).height() - $('.direct-icon-zone').offset().top)
+        $('.direct-icon-zone').css('min-height', $(window).height() - $('.direct-icon-zone').offset().top)
     })
 </script>
 </body>

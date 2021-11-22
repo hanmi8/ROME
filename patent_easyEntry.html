@@ -5,9 +5,11 @@
     <title>진입용이성 | 특허기반 유망분야 | Home</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/component.css">
     <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/js/common.js"></script>
 </head>
 <body>
@@ -26,9 +28,33 @@
         <div class="container">
             <div class="container-header">
                 <div class="location">
-                    <a href="#" class="home">Home</a>
-                    <a href="#">특허기반 유망분야<span class="icon icon-caret"></span></a>
-                    <a href="#" class="active">진입용이성<span class="icon icon-caret-white"></span></a>
+                    <a href="index.html" class="home">Home</a>
+                    <div class="location-dropdown">
+                        <strong>특허기반 유망분야<span class="icon icon-caret"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="tech_trend.html">기술동향</a></li>
+                            <li><a href="rnd_finder_company.html">R&D Finder</a></li>
+                            <li><a href="trade_system_overview.html">무역통계기반 유망품목발굴</a></li>
+                            <li><a href="patent_rnd.html">특허기반 유망분야</a></li>
+                            <li><a href="business_index.html">사업현황</a></li>
+                            <li><a href="digital_know_where.html">디지털 라이브러리</a></li>
+                        </ul>
+                    </div>
+                    <div class="location-dropdown sub">
+                        <strong>진입 용이성<span class="icon icon-caret-white"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="patent_rnd.html">산업기술 R&D 전략분야</a></li>
+                            <li><a href="patent_field.html">분야별 출원현황</a></li>
+                            <li><a href="patent_analysis.html">주요출원인 분석</a></li>
+                            <li><a href="patent_tech_improvement.html">기술 부상도</a></li>
+                            <li><a href="patent_easyEntry.html">진입 용이성</a></li>
+                            <li><a href="patent_tech_level.html">기술 수준</a></li>
+                            <li><a href="patent_tech_result.html">기술성 종합결과</a></li>
+                            <li><a href="patent_specific_result.html">분야별 특허지표 측정결과</a></li>
+                            <li><a href="patent_korea_analysis.html">우리나라의 기술 경쟁력 분석</a></li>
+                            <li><a href="patent_free_analysis.html">자율분석</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="search-wrap mb-32">
@@ -141,7 +167,7 @@
                         <td>전기차기술(A)</td>
                         <td class="text-left">구동 및 전력변환(AA)</td>
                         <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
+                        <td class="text-right"><a href="#" class="modal-call" data-target="#applicant">15,577</a></td>
                         <td class="text-left">집중화 정도가 거의 없는 시장</td>
                         <td>높음</td>
                         <td>4</td>
@@ -151,7 +177,7 @@
                         <td>전기차기술(A)</td>
                         <td class="text-left">에너지 저장 및 충전(AB)</td>
                         <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
+                        <td class="text-right"><a href="#" class="modal-call" data-target="#applicant">15,577</a></td>
                         <td class="text-left">집중화 정도가 거의 없는 시장</td>
                         <td>높음</td>
                         <td>4</td>
@@ -161,7 +187,7 @@
                         <td>전기차기술(A)</td>
                         <td class="text-left">공조 및 열관리(AC)</td>
                         <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
+                        <td class="text-right"><a href="#" class="modal-call" data-target="#applicant">15,577</a></td>
                         <td class="text-left">집중화 정도가 거의 없는 시장</td>
                         <td>높음</td>
                         <td>4</td>
@@ -169,6 +195,124 @@
                     </tbody>
                 </table>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- 출원인 목록 -->
+<div class="modal" id="applicant">
+    <div class="modal-dialog modal-middle">
+        <div class="modal-header">
+            <h2>출원인 목록</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <h4 class="mt-24">구동 및 전력변환 기술 (AA)</h4>
+            <table class="table-vertical">
+                <colgroup>
+                    <col width="243px">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>출원인</th>
+                    <th>출원건수</th>
+                    <th>Si²</th>
+                    <th>N</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>TOYOTA[JP]</td>
+                    <td class="text-right">1,462</td>
+                    <td class="text-right">883.316742</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>MITSBISHI[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HONDA[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HONDA[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HONDA[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HONDA[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HONDA[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HONDA[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HONDA[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HONDA[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HONDA[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HONDA[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HONDA[JP]</td>
+                    <td class="text-right"></td>
+                    <td class="text-right"></td>
+                    <td></td>
+                </tr>
+                <tr class="total">
+                    <td>합계</td>
+                    <td class="text-right">15,550</td>
+                    <td colspan="2">HHI = 154.35</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-white modal-close">닫기</button>
+<!--            <button class="btn btn-primary">확인</button>-->
         </div>
     </div>
 </div>

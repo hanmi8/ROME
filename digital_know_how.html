@@ -5,9 +5,11 @@
     <title>Know how | 디지털 라이브러리 | Home</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/component.css">
     <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/js/common.js"></script>
 </head>
 <body>
@@ -26,9 +28,25 @@
         <div class="container">
             <div class="container-header">
                 <div class="location">
-                    <a href="#" class="home">Home</a>
-                    <a href="#">디지털 라이브러리<span class="icon icon-caret"></span></a>
-                    <a href="#" class="active">Know how<span class="icon icon-caret-white"></span></a>
+                    <a href="index.html" class="home">Home</a>
+                    <div class="location-dropdown">
+                        <strong>디지털 라이브러리<span class="icon icon-caret"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="tech_trend.html">기술동향</a></li>
+                            <li><a href="rnd_finder_company.html">R&D Finder</a></li>
+                            <li><a href="trade_system_overview.html">무역통계기반 유망품목발굴</a></li>
+                            <li><a href="patent_rnd.html">특허기반 유망분야</a></li>
+                            <li><a href="business_index.html">사업현황</a></li>
+                            <li><a href="digital_know_where.html">디지털 라이브러리</a></li>
+                        </ul>
+                    </div>
+                    <div class="location-dropdown sub">
+                        <strong>Know How <span class="icon icon-caret-white"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="digital_know_where.html">Know Where</a></li>
+                            <li><a href="digital_know_how.html">Know How</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="search-wrap">
@@ -58,7 +76,7 @@
                                 <dd>법률</dd>
                                 <dd>기술수준</dd>
                                 <dd>표준/인증</dd>
-                                <dd class="add">+ 추가</dd>
+                                <dd class="add modal-call" data-target="#add_know_how_second">+ 추가</dd>
                             </dl>
                             <dl>
                                 <dt class="title">선정</dt>
@@ -73,7 +91,7 @@
                                 <dt>사업선정<a href="#"><i class="icon icon-plus-circle-gray"></i></a></dt>
                                 <dd>소분류이름</dd>
                                 <dd>소분류이름/전략</dd>
-                                <dd class="add">+ 추가</dd>
+                                <dd class="add modal-call" data-target="#add_know_how_second">+ 추가</dd>
                             </dl>
                             <dl>
                                 <dt class="title">관리</dt>
@@ -90,7 +108,7 @@
                                 <dd>소분류이름</dd>
                                 <dt>기술료<a href="#"><i class="icon icon-plus-circle-gray"></i></a></dt>
                                 <dd>미래예측</dd>
-                                <dd class="add">+ 추가</dd>
+                                <dd class="add modal-call" data-target="#add_know_how_second">+ 추가</dd>
                             </dl>
                             <dl>
                                 <dt class="title">성과</dt>
@@ -102,16 +120,16 @@
                                 <dd>소분류이름</dd>
                                 <dd>소분류이름</dd>
                                 <dd>소분류이름</dd>
-                                <dd class="add">+ 추가</dd>
+                                <dd class="add modal-call" data-target="#add_know_how_second">+ 추가</dd>
                             </dl>
                             <dl>
                                 <dt class="title">기타</dt>
-                                <dd class="add">+ 추가</dd>
+                                <dd class="add modal-call" data-target="#add_know_how_second">+ 추가</dd>
                             </dl>
                         </div>
                     </div>
                     <div class="divide-right know-how" style="width:calc(100% - 988px - 32px);">
-                        <div class="title">Know-How<a href="#">+ 추가</a></div>
+                        <div class="title">Know-How<a href="#" class="modal-call" data-target="#add_know_how">+ 추가</a></div>
                         <div class="know-how-location">
                             <span><i class="icon icon-location left"></i>기획</span>
                             <span>대내외 환경 전망</span>
@@ -121,7 +139,7 @@
                             <li>
                                 <div class="list-header">
                                     <div class="d-flex align-center">
-                                        <strong>기술성 평가 </strong>
+                                        <a href="#" class="modal-call" data-target="#evaluation_tech">기술성 평가</a>
                                         <span>홍길동 / 2021.03.02</span>
                                     </div>
                                     <button class="btn btn-white btn-round">삭제</button>
@@ -137,7 +155,7 @@
                             <li>
                                 <div class="list-header">
                                     <div class="d-flex align-center">
-                                        <strong>기술성 평가 </strong>
+                                        <a href="#" class="modal-call" data-target="#evaluation_tech">기술성 평가</a>
                                         <span>홍길동 / 2021.03.02</span>
                                     </div>
                                     <button class="btn btn-white btn-round">삭제</button>
@@ -153,7 +171,7 @@
                             <li>
                                 <div class="list-header">
                                     <div class="d-flex align-center">
-                                        <strong>기술성 평가 </strong>
+                                        <a href="#" class="modal-call" data-target="#evaluation_tech">기술성 평가</a>
                                         <span>홍길동 / 2021.03.02</span>
                                     </div>
                                     <button class="btn btn-white btn-round">삭제</button>
@@ -170,7 +188,7 @@
                             <li>
                                 <div class="list-header">
                                     <div class="d-flex align-center">
-                                        <strong>기술성 평가 </strong>
+                                        <a href="#" class="modal-call" data-target="#evaluation_tech">기술성 평가</a>
                                         <span>홍길동 / 2021.03.02</span>
                                     </div>
                                     <button class="btn btn-white btn-round">삭제</button>
@@ -186,7 +204,7 @@
                             <li>
                                 <div class="list-header">
                                     <div class="d-flex align-center">
-                                        <strong>기술성 평가 </strong>
+                                        <a href="#" class="modal-call" data-target="#evaluation_tech">기술성 평가</a>
                                         <span>홍길동 / 2021.03.02</span>
                                     </div>
                                     <button class="btn btn-white btn-round">삭제</button>
@@ -202,7 +220,7 @@
                             <li>
                                 <div class="list-header">
                                     <div class="d-flex align-center">
-                                        <strong>기술성 평가 </strong>
+                                        <a href="#" class="modal-call" data-target="#evaluation_tech">기술성 평가</a>
                                         <span>홍길동 / 2021.03.02</span>
                                     </div>
                                     <button class="btn btn-white btn-round">삭제</button>
@@ -219,6 +237,292 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 출원인 목록 -->
+<div class="modal" id="evaluation_tech">
+    <div class="modal-dialog modal-middle">
+        <div class="modal-header">
+            <h2>Know-How 상세</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <table class="table-horizontal">
+                <colgroup>
+                    <col width="119px">
+                    <col width="">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th>대분류</th>
+                    <td>기획</td>
+                </tr>
+                <tr>
+                    <th>중분류</th>
+                    <td>대내외 환경 전망</td>
+                </tr>
+                <tr>
+                    <th>소분류</th>
+                    <td>미래예측</td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th>노하우</th>
+                    <td><textarea  rows="5" class="form-control" style="height:127px;"></textarea></td>
+                </tr>
+                <tr>
+                    <th>첨부파일</th>
+                    <td>
+                        <div class="d-flex">
+                            <input type="text" class="form-control" style="width:calc(100% - 96px - 8px);">
+                            <button class="btn btn-royalblue ml-8"><i class="icon icon-plus-circle left"></i>파일추가</button>
+                        </div>
+                        <table class="table-vertical mt-8">
+                            <colgroup>
+                                <col width="">
+                                <col width="52px">
+                                <col width="97px">
+                                <col width="74px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>파일명</th>
+                                <th>용량</th>
+                                <th>등록일</th>
+                                <th>등록자</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>파일명이들어갑니다최대길이는 이정도... pdf</td>
+                                <td>5mb</td>
+                                <td>2021-09-31</td>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>2021-09-31</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>2021-09-31</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>2021-09-31</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-black">삭제</button>
+            <button class="btn btn-default">임시저장</button>
+            <button class="btn btn-blue">확정계시</button>
+            <button class="btn btn-green">저장이력확인</button>
+        </div>
+    </div>
+</div>
+
+<!-- Know-How 추가 -->
+<div class="modal" id="add_know_how">
+    <div class="modal-dialog modal-large">
+        <div class="modal-header">
+            <h2>Know-How 추가</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <table class="table-horizontal">
+                <colgroup>
+                    <col width="119px">
+                    <col width="">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th>대분류</th>
+                    <td>기획</td>
+                </tr>
+                <tr>
+                    <th>중분류</th>
+                    <td>대내외 환경 전망</td>
+                </tr>
+                <tr>
+                    <th>소분류</th>
+                    <td>미래예측</td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th>노하우</th>
+                    <td><textarea  rows="5" class="form-control" style="height:127px;"></textarea></td>
+                </tr>
+                <tr>
+                    <th>첨부파일</th>
+                    <td>
+                        <div class="d-flex">
+                            <input type="text" class="form-control" style="width:calc(100% - 96px - 8px);">
+                            <button class="btn btn-royalblue ml-8"><i class="icon icon-plus-circle left"></i>파일추가</button>
+                        </div>
+                        <table class="table-vertical mt-8">
+                            <colgroup>
+                                <col width="">
+                                <col width="52px">
+                                <col width="97px">
+                                <col width="74px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>파일명</th>
+                                <th>용량</th>
+                                <th>등록일</th>
+                                <th>등록자</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>파일명이들어갑니다최대길이는 이정도... pdf</td>
+                                <td>5mb</td>
+                                <td>2021-09-31</td>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>2021-09-31</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>2021-09-31</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>2021-09-31</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-green modal-close">저장</button>
+        </div>
+    </div>
+</div>
+
+<!-- Know-How 추가 -->
+<div class="modal" id="add_know_how_second">
+    <div class="modal-dialog modal-large">
+        <div class="modal-header">
+            <h2>Know-How 추가</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <table class="table-horizontal">
+                <colgroup>
+                    <col width="119px">
+                    <col width="">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th>대분류</th>
+                    <td>기획</td>
+                </tr>
+                <tr>
+                    <th>중분류</th>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th>소분류</th>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th>노하우</th>
+                    <td><textarea  rows="5" class="form-control" style="height:127px;"></textarea></td>
+                </tr>
+                <tr>
+                    <th>첨부파일</th>
+                    <td>
+                        <div class="d-flex">
+                            <input type="text" class="form-control" style="width:calc(100% - 96px - 8px);">
+                            <button class="btn btn-royalblue ml-8"><i class="icon icon-plus-circle left"></i>파일추가</button>
+                        </div>
+                        <table class="table-vertical mt-8">
+                            <colgroup>
+                                <col width="">
+                                <col width="52px">
+                                <col width="97px">
+                                <col width="74px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>파일명</th>
+                                <th>용량</th>
+                                <th>등록일</th>
+                                <th>등록자</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>파일명이들어갑니다최대길이는 이정도... pdf</td>
+                                <td>5mb</td>
+                                <td>2021-09-31</td>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>2021-09-31</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>2021-09-31</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>2021-09-31</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-green modal-close">저장</button>
         </div>
     </div>
 </div>

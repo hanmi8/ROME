@@ -32,10 +32,35 @@
                     <li><a href="#tab2">검색</a></li>
                 </ul>
                 <div class="location">
-                    <a href="#" class="home">Home</a>
-                    <a href="#">무역통계기반 유망품목발굴<span class="icon icon-caret"></span></a>
-                    <a href="#">무역시장분석(Target)<span class="icon icon-caret"></span></a>
-                    <a href="#" class="active">미ㆍ중시장분석<span class="icon icon-caret-white"></span></a>
+                    <a href="index.html" class="home">Home</a>
+                    <div class="location-dropdown">
+                        <strong>무역통계기반 유망품목발굴<span class="icon icon-caret"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="tech_trend.html">기술동향</a></li>
+                            <li><a href="rnd_finder_company.html">R&D Finder</a></li>
+                            <li><a href="trade_system_overview.html">무역통계기반 유망품목발굴</a></li>
+                            <li><a href="patent_rnd.html">특허기반 유망분야</a></li>
+                            <li><a href="business_index.html">사업현황</a></li>
+                            <li><a href="digital_know_where.html">디지털 라이브러리</a></li>
+                        </ul>
+                    </div>
+                    <div class="location-dropdown">
+                        <strong>무역시장분석(Target) <span class="icon icon-caret-white"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="trade_system_overview.html">시스템 개요</a></li>
+                            <li><a href="trade_hs.html">무역거래품목코드(HS)</a></li>
+                            <li><a href="trade_index_gvc.html">무역통계지수(index)</a></li>
+                            <li><a href="trade_target_overview.html">무역시장분석(Target)</a></li>
+                        </ul>
+                    </div>
+                    <div class="location-dropdown sub">
+                        <strong>미ㆍ중시장분석<span class="icon icon-caret-white"></span></strong>
+                        <ul class="location-dropdown-menu">
+                            <li><a href="trade_target_overview.html">Targeting 설명</a></li>
+                            <li><a href="trade_target_market.html">미ㆍ중시장분석</a></li>
+                            <li><a href="trade_target_domestic.html">국내 수입품목 분석</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="tab-contents" id="tab1" style="display:block;">
@@ -97,9 +122,9 @@
                         <div class="form-group w100p">
                             <label class="control-label primary" style="width:136px;">Prody Index</label>
                             <div class="slider-wrap">
-                                <input type="text" class="form-control" id="slider-min" placeholder="Min">
-                                <div id="slider-range"></div>
-                                <input type="text" class="form-control" id="slider-max" placeholder="Max">
+                                <input type="text" class="form-control slider-min" id="prody_index_min">
+                                <div class="slider-range" id="prody_index_range"></div>
+                                <input type="text" class="form-control slider-max" id="prody_index_max">
                             </div>
                         </div>
                     </div>
@@ -122,12 +147,10 @@
                                 <input type="text" class="form-control" placeholder="입력 전" style="width:500px;">
                             </div>
                             <label class="control-label primary" style="width:136px;">수입의존도</label>
-                            <div class="form-input-wrap terms min-max">
-                                <strong>Min</strong>
-                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
-                                <span>~</span>
-                                <strong>Max</strong>
-                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
+                            <div class="slider-wrap">
+                                <input type="text" class="form-control slider-min" id="import_dependence_min">
+                                <div class="slider-range" id="import_dependence_range"></div>
+                                <input type="text" class="form-control slider-max" id="import_dependence_max">
                             </div>
                         </div>
                     </div>
@@ -142,12 +165,10 @@
                             </div>
                             <input type="text" class="form-control" placeholder="입력 전" style="width:334px;">
                             <label class="control-label primary" style="width:136px;">연평균수입액</label>
-                            <div class="form-input-wrap terms min-max">
-                                <strong>Min</strong>
-                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
-                                <span>~</span>
-                                <strong>Max</strong>
-                                <input type="text" class="form-control" placeholder="입력 전" style="width:190px;">
+                            <div class="slider-wrap">
+                                <input type="text" class="form-control slider-min" id="income_average_min">
+                                <div class="slider-range" id="income_average_range"></div>
+                                <input type="text" class="form-control slider-max" id="income_average_max">
                             </div>
                         </div>
                         <button class="btn-search"></button>
@@ -313,37 +334,6 @@
         </div>
     </div>
 </div>
-
-<script>
-    $( function() {
-        $( "#slider-range" ).slider({
-            range: true,
-            min: 0,
-            max: 100,
-            values: [ 0, 100 ],
-            slide: function( event, ui ) {
-                $('#slider-min').val(ui.values[ 0 ])
-                $('#slider-max').val(ui.values[ 1 ])
-            }
-        });
-        $('#slider-min').val($('#slider-range').slider('values' , 0));
-        $('#slider-max').val($('#slider-range').slider('values' , 1));
-    });
-    $('#slider-min').change(function () {
-        var value = this.value
-        var minValue = $('#slider-range').slider('values' , 0);
-        var maxValue = $('#slider-range').slider('values' , 1);
-        if(value > maxValue ){
-            value = maxValue;
-            $('#slider-min').val(maxValue);
-        }
-        $("#slider-range").slider("values",0, parseInt(value));
-    });
-    $('#slider-max').change(function () {
-        var value = this.value
-        $("#slider-range").slider("values",1, parseInt(value));
-    });
-</script>
 
 </body>
 </html>
