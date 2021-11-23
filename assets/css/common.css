@@ -326,9 +326,10 @@ h5 {font-size:14px;line-height:20px;font-weight:400;margin-bottom:24px;color:#20
 .search-detail > ul > li {display:flex;border-bottom:1px solid #DDDDDD;min-height:42px;}
 .search-detail > ul > li:last-child {border-bottom:none;}
 .search-detail > ul > li .form-group {min-height:auto;padding:4px 0;}
-.search-detail > ul > li .form-group:nth-child(1) {width:571px;}
-.search-detail > ul > li .form-group:nth-child(2) {width:545px;}
-.search-detail > ul > li .form-group .label-caret {width:114px;}
+.search-detail > ul > li .form-group:nth-child(1) {flex:0 0 530px;width:530px;}
+.search-detail > ul > li .form-group.w100p {flex:0 0 100%;width:100%;}
+.search-detail > ul > li .form-group:nth-child(2) {flex:0 0 545px;width:545px;}
+.search-detail > ul > li .form-group .label-caret {flex:0 0 114px;width:114px;}
 .search-detail > ul > li .form-group em {color:#6A707D;font-size:15px;line-height:18px;}
 .search-detail > ul > li .form-group.w100p .d-flex {margin-right:50px;}
 
@@ -401,11 +402,6 @@ table.table-hs-code th div {border:1px solid #8B96AA;}
 
 
 
-
-
-
-
-
 /* modal */
 .modal {position:fixed;left:0;right:0;top:0;bottom:0;display:none;height:100%;background:rgba(0,0,0,0.5);z-index:100;}
 .modal .modal-dialog {position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);background:#fff;border-radius:8px;overflow:hidden;}
@@ -440,6 +436,7 @@ table.table-hs-code th div {border:1px solid #8B96AA;}
 .popup-layer .layer-header .layer-close {cursor:pointer;}
 .popup-layer .layer-header h3 {font-size:16px;line-height:20px;font-weight:700;color:#fff;background:none;padding:0;margin:0;}
 
+
 .popup-indicators-chart {position:absolute;right:0;top:0;width:735px;height:465px;border:1px solid #8B96AA;box-shadow:20px 20px 20px rgba(0,0,0,.15);background:#fff;padding:40px;}
 .popup-indicators-chart span.layer-close {position:absolute;right:14px;top:14px;}
 .popup-indicators-chart .chart-yAxis {position:absolute;left:0;top:40px;width:40px;height:auto;text-align:center;}
@@ -463,6 +460,7 @@ table.table-hs-code th div {border:1px solid #8B96AA;}
 .popup-indicators-chart .grid-zone .grid-item h4 {margin-bottom:12px;}
 .popup-indicators-chart .grid-zone .grid-item ul {margin-left:26px;}
 .popup-indicators-chart .grid-zone .grid-item ul li {list-style-image: url('../images/blt_list_item_caret.png');margin-bottom:8px;font-size:14px;line-height:16px;}
+
 
 .modal .content-header {display:flex;align-items:center;height:60px;background:#FBFCFF;padding:0 32px;border-bottom:1px solid #ddd;margin-bottom:13px;}
 .modal .content-header label {font-size:14px;font-weight:400;}
