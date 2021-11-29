@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Know Where | 디지털 라이브러리 | Home</title>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/pretendard.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/common.css">
@@ -169,7 +170,7 @@
                         <td class="text-left">국회미래연구원 / 연구보고서</td>
                         <td class="text-left">중장기 미래예측 보고서</td>
                         <td class="text-left"><div class="copy-url">https://www.nafi.re.kr<button class="btn btn-x-small btn-copy">복사</button></div></td>
-                        <td class="text-left">중장기 매래연구보고서 78건(2018~2020)</td>
+                        <td class="text-left td-ellipsis">중장기 매래연구보고서 78건(2018~2020) 중장기 매래연구보고서 78건(2018~2020) 중장기 매래연구보고서 78건(2018~2020) </td>
                         <td class="text-left"><div class="file-wrap hwp">미래예측을 위한 새로...hwp</div></td>
                         <td class="text-left">홍길동(2021.07.10), 성춘향(2021.10.05)</td>
                         <td>조성호 (2021.10.05)</td>
@@ -331,6 +332,24 @@
             }else{
                 $('.direct-input').slideUp(200)
             }
+        })
+        function pointerPosition(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+        }
+
+        $('.td-ellipsis').click(function(e){
+            var contentText = $(this).text()
+            console.log(contentText)
+            $('body').append('<div class="tooltip">' + contentText + '<span class="tooltip-close"><i class="icon icon-times-small"></i></span></div>')
+            $('.tooltip').css({
+                'display': 'block',
+                'left' : e.clientX,
+                'top' : e.clientY,
+            });
+        })
+        $(document).on('click','.tooltip-close', function(){
+            $(this).parent('.tooltip').remove();
         })
     })
 </script>

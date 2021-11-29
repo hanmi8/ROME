@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>분야별 출원현황 | 특허기반 유망분야 | Home</title>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/pretendard.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/common.css">
@@ -136,109 +137,192 @@
             </div>
             <div class="section mb-32">
                 <h2 class="d-flex justify-between mb-16">유효특허현황 <button class="btn btn-white btn-small hover-black"><i class="icon icon-file-xls left"></i>엑셀다운로드</button></h2>
-                <table class="table-vertical px-8">
-                    <colgroup>
-                        <col style="width:177px">
-                        <col style="width:177px">
-                        <col>
-                        <col style="width:117px">
-                        <col style="width:117px">
-                        <col style="width:117px">
-                        <col style="width:117px">
-                        <col style="width:117px">
-                        <col style="width:117px">
-                    </colgroup>
-                    <thead>
-                    <tr>
-                        <th>기술분야</th>
-                        <th>대분류</th>
-                        <th>중분류</th>
-                        <th>한국</th>
-                        <th>미국</th>
-                        <th>일본</th>
-                        <th>유럽</th>
-                        <th>중국</th>
-                        <th>총합계</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td rowspan="7">전기수소차</td>
-                        <td rowspan="5">전기차기술(A)</td>
-                        <td class="text-left">구동 및 전력변환(AA)</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right total">15,577</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">에너지 저장 및 충전(AB)</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right total">15,577</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">공조 및 열관리(AC)</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right total">15,577</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">...</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right total">15,577</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">...</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right total">15,577</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">수소차기술(B)</td>
-                        <td class="text-left">연료전지 시스템(BA)</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right total">15,577</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">수소저장 시스템 및 충전(BB)</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right total">15,577</td>
-                    </tr>
-                    <tr class="total">
-                        <td colspan="3">총합계</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right">15,577</td>
-                        <td class="text-right total">15,577</td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="table-header">
+                    <table class="table-vertical px-8">
+                        <colgroup>
+                            <col style="width:177px">
+                            <col style="width:177px">
+                            <col>
+                            <col style="width:117px">
+                            <col style="width:117px">
+                            <col style="width:117px">
+                            <col style="width:117px">
+                            <col style="width:117px">
+                            <col style="width:117px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>기술분야</th>
+                            <th>대분류</th>
+                            <th>중분류</th>
+                            <th>한국</th>
+                            <th>미국</th>
+                            <th>일본</th>
+                            <th>유럽</th>
+                            <th>중국</th>
+                            <th>총합계</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table-body" style="height:300px;">
+                    <table class="table-vertical px-8">
+                        <colgroup>
+                            <col style="width:177px">
+                            <col style="width:177px">
+                            <col>
+                            <col style="width:117px">
+                            <col style="width:117px">
+                            <col style="width:117px">
+                            <col style="width:117px">
+                            <col style="width:117px">
+                            <col style="width:117px">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <td rowspan="7">전기수소차</td>
+                            <td rowspan="5">전기차기술(A)</td>
+                            <td class="text-left">구동 및 전력변환(AA)</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">에너지 저장 및 충전(AB)</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">공조 및 열관리(AC)</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">...</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">...</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">수소차기술(B)</td>
+                            <td class="text-left">연료전지 시스템(BA)</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">수소저장 시스템 및 충전(BB)</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">전기수소차</td>
+                            <td rowspan="5">전기차기술(A)</td>
+                            <td class="text-left">구동 및 전력변환(AA)</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">에너지 저장 및 충전(AB)</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">공조 및 열관리(AC)</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">...</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">...</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">수소차기술(B)</td>
+                            <td class="text-left">연료전지 시스템(BA)</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">수소저장 시스템 및 충전(BB)</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        <tr class="total">
+                            <td colspan="3">총합계</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right">15,577</td>
+                            <td class="text-right total">15,577</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="section">
                 <h2>연도별 특허동향</h2>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>버튼 컴포넌트 </title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/pretendard.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/component.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+    <style>
+        .component-wrap {padding:20px;margin-bottom:100px;}
+        .component-wrap h1 {font-size:24px;font-weight:bold;margin-bottom:10px;}
+        button,
+        a {margin:0 2px;}
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="component-wrap">
+            <h1>큰 버튼</h1>
+            <div class="d-flex align-center">
+                <button class="btn btn-lg btn-darkgray">dark gray</button>
+                <button class="btn btn-lg btn-black">black</button>
+                <button class="btn btn-lg btn-white">white</button>
+                <button class="btn btn-lg btn-malibu">malibu</button>
+                <button class="btn btn-lg btn-primary">primary</button>
+                <button class="btn btn-lg btn-paper">paper</button>
+                <button class="btn btn-lg btn-skyblue">skyblue</button>
+                <button class="btn btn-lg btn-royalblue">royalblue</button>
+                <button class="btn btn-lg btn-default">default</button>
+                <button class="btn btn-lg btn-danger">danger</button>
+                <button class="btn btn-lg btn-copy">copy</button>
+            </div>
+        </div>
+        <div class="component-wrap">
+            <h1>작은 버튼</h1>
+            <div class="d-flex align-center">
+                <button class="btn btn-darkgray">dark gray</button>
+                <button class="btn btn-black">black</button>
+                <button class="btn btn-white">white</button>
+                <button class="btn btn-malibu">malibu</button>
+                <button class="btn btn-primary">primary</button>
+                <button class="btn btn-paper">paper</button>
+                <button class="btn btn-skyblue">skyblue</button>
+                <button class="btn btn-royalblue">royalblue</button>
+                <button class="btn btn-default">default</button>
+                <button class="btn btn-danger">danger</button>
+                <button class="btn btn-copy">copy</button>
+            </div>
+        </div>
+        <div class="component-wrap">
+            <h1>텍스트 앞에 아이콘 버튼</h1>
+            <div class="d-flex align-center">
+                <button class="btn btn-lg btn-primary"><i class="icon icon-plus-circle left"></i>circle</button>
+                <button class="btn btn-lg btn-malibu"><i class="icon icon-link left"></i>link</button>
+                <button class="btn btn-lg btn-black"><i class="icon icon-control left"></i>control</button>
+                <button class="btn btn-lg btn-white"><i class="icon icon-undo left"></i>undo</button>
+                <button class="btn btn-lg btn-white"><i class="icon icon-list left"></i>list</button>
+                <button class="btn btn-blue"><i class="icon icon-save left"></i>save</button>
+                <button class="btn btn-danger"><i class="icon icon-trash left"></i>trash</button>
+            </div>
+        </div>
+        <div class="component-wrap">
+            <h1>텍스트 뒤에 아이콘 버튼</h1>
+            <div class="d-flex align-center">
+                <button class="btn btn-lg btn-primary">circle<i class="icon icon-plus-circle right"></i></button>
+                <button class="btn btn-lg btn-malibu">link<i class="icon icon-link right"></i></button>
+                <button class="btn btn-lg btn-black">control<i class="icon icon-control right"></i></button>
+                <button class="btn btn-blue">save<i class="icon icon-save right"></i></button>
+                <button class="btn btn-danger">trash<i class="icon icon-trash right"></i></button>
+                <button class="btn btn-malibu">상세조건 열기<i class="icon icon-arrow-down-white right"></i></button>
+            </div>
+        </div>
+        <div class="component-wrap">
+            <h1>파일 아이콘 버튼</h1>
+            <div class="d-flex align-center">
+                <button class="btn btn-white btn-small hover-black"><i class="icon icon-file-xls left"></i>엑셀다운로드</button>
+                <button class="btn btn-white btn-small hover-black"><i class="icon icon-file-pdf left"></i>pdf다운로드</button>
+                <button class="btn btn-white btn-small hover-black"><i class="icon icon-file-ppt left"></i>ppt다운로드</button>
+                <button class="btn btn-white btn-small hover-black"><i class="icon icon-file-doc left"></i>doc다운로드</button>
+                <button class="btn btn-white btn-small hover-black"><i class="icon icon-file-one left"></i>one다운로드</button>
+                <button class="btn btn-white btn-small hover-black"><i class="icon icon-file-hwp left"></i>hwp다운로드</button>
+            </div>
+        </div>
+
+        <div class="component-wrap">
+            <h1>아이콘만, 작은 버튼</h1>
+            <div class="d-flex align-center">
+                <a href="#" class="btn-plus"></a>
+                <a href="#" class="btn-minus"></a>
+                <button class="btn btn-skyblue btn-plus" style="width: 32px !important;height: 32px !important;min-width: auto;"></button>
+                <a href="#"><i class="icon icon-gear"></i></a>
+                <button class="btn btn-icon btn-primary"><i class="fa fa-sync"></i></button>
+                <button class="btn btn-icon btn-white"><i class="fa fa-edit"></i></button>
+                <button class="btn btn-icon btn-malibu"><i class="fa fa-book"></i></button>
+                <button class="btn btn-icon btn-default"><i class="fa fa-times"></i></button>
+            </div>
+        </div>
+
+        <div class="component-wrap">
+            <h1>아이콘만, 큰 버튼</h1>
+            <div class="d-flex align-center">
+                <button class="btn btn-icon btn-lg btn-primary"><i class="fa fa-sync"></i></button>
+                <button class="btn btn-icon btn-lg btn-white"><i class="fa fa-edit"></i></button>
+                <button class="btn btn-icon btn-lg btn-malibu"><i class="fa fa-book"></i></button>
+                <button class="btn btn-icon btn-lg btn-default"><i class="fa fa-times"></i></button>
+            </div>
+        </div>
+
+        <div class="component-wrap">
+            <h1>조회 버튼</h1>
+            <div class="search-wrap">
+                <div class="form-horizontal">
+                    <div class="form-group w100p"></div>
+                    <button class="btn-search"></button>
+                </div>
+            </div>
+            <button class="btn btn-darkgray"><i class="icon icon-search left"></i> 조회</button>
+        </div>
+        <div class="component-wrap">
+            <h1>모달 버튼</h1>
+            <button class="btn btn-lg btn-skyblue modal-call" data-target="#modal_sample">modal call</button>
+        </div>
+
+        <div class="modal" id="modal_sample">
+            <div class="modal-dialog modal-small">
+                <div class="modal-header">
+                    <h2>모달 샘플</h2>
+                    <span class="modal-close"></span>
+                </div>
+                <div class="modal-body">
+                    <div class="temp" style="height:200px;">TEMP</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-white modal-close">취소</button>
+                    <button class="btn btn-primary">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

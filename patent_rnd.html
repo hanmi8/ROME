@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>산업기술 R&D 전략분야 | 특허기반 유망분야 | Home</title>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/pretendard.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/common.css">
@@ -61,8 +62,17 @@
                 <div class="form-horizontal input-wrap">
                     <div class="form-group">
                         <label class="control-label primary" style="width:113px;">기술분야</label>
-                        <div class="dropdown mr-8" style="width:400px;">
-                            <strong class="dropdown-toggle">전기수소차</strong>
+                        <div class="dropdown add-menu mr-8" style="width:400px;" data-name="::대분류::">
+                            <strong class="dropdown-toggle">::대분류::</strong>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="icon-checkbox"></span>대분류 0</a></li>
+                                <li><a href="#"><span class="icon-checkbox"></span>대분류 1</a></li>
+                                <li><a href="#"><span class="icon-checkbox"></span>대분류 2</a></li>
+                                <li><a href="#"><span class="icon-checkbox"></span>대분류 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown add-menu mr-8" style="width:400px;" data-name="::중분류::">
+                            <strong class="dropdown-toggle">::중분류::</strong>
                             <ul class="dropdown-menu">
                                 <li><a href="#"><span class="icon-checkbox"></span>자율주행차</a></li>
                                 <li><a href="#"><span class="icon-checkbox"></span>전기수소차</a></li>
@@ -70,17 +80,8 @@
                                 <li><a href="#"><span class="icon-checkbox"></span>내용들어감</a></li>
                             </ul>
                         </div>
-                        <div class="dropdown mr-8" style="width:400px;">
-                            <strong class="dropdown-toggle">대분류</strong>
-                            <ul class="dropdown-menu">
-                                <li><a href="#"><span class="icon-checkbox"></span>자율주행차</a></li>
-                                <li><a href="#"><span class="icon-checkbox"></span>전기수소차</a></li>
-                                <li><a href="#"><span class="icon-checkbox"></span>내용들어감</a></li>
-                                <li><a href="#"><span class="icon-checkbox"></span>내용들어감</a></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown" style="width:400px;">
-                            <strong class="dropdown-toggle">중분류</strong>
+                        <div class="dropdown add-menu" style="width:400px;" data-name="::소분류::">
+                            <strong class="dropdown-toggle">::소분류::</strong>
                             <ul class="dropdown-menu">
                                 <li><a href="#"><span class="icon-checkbox"></span>자율주행차</a></li>
                                 <li><a href="#"><span class="icon-checkbox"></span>전기수소차</a></li>
@@ -123,34 +124,34 @@
                     <td rowspan="5">1</td>
                     <td rowspan="5">전기수소차</td>
                     <td rowspan="3">전기차기술</td>
-                    <td>구동 및 전력변환(AA)</td>
-                    <td>전기수소자동차의 장거리 고성능 주행을 동시에 충족할 수 있는 핵심기반인 전기구동모터, 동력전달장치, 전력변환장치 기술,
+                    <td class="text-left">구동 및 전력변환(AA)</td>
+                    <td class="text-left">전기수소자동차의 장거리 고성능 주행을 동시에 충족할 수 있는 핵심기반인 전기구동모터, 동력전달장치, 전력변환장치 기술,
                         그리고 이들을 일체화하여 구현하는 전기구동시스템 기술과 고전압 배터리로부터 구동시스템 및 전장시스템에 전력을 공급/변환하기
                         위한 고효율, 고밀도의 전력변환 기술을 의미</td>
                 </tr>
                 <tr>
-                    <td>에너지 저장 및 충전(AB)</td>
-                    <td>에너지 저장분야는 전기차의 동력원을 담당하는 배터리 셀, 모듈, 팩(BMS를 포함)의 성능에 관한 기술로서, 전기차의 에너지 효율 증대,
+                    <td class="text-left">에너지 저장 및 충전(AB)</td>
+                    <td class="text-left">에너지 저장분야는 전기차의 동력원을 담당하는 배터리 셀, 모듈, 팩(BMS를 포함)의 성능에 관한 기술로서, 전기차의 에너지 효율 증대,
                         주행거리 향상과 연장에 필요한 기술로서 고밀도화를 통한 편의성 향상과 가격경쟁력을 확보할 수 있는 이차전지 기술을 의미하며,
                         충전 분야는 전기차 충전성능에 관한 기술로서, 대용량 충전기술, 충전기 수량 증가에 따른 전력피크 제어기술, 전기버스 등 상용
                         전기차용 충전기술 등 편의성 향상을 위한 자동/무선 충전기술로 구성되어 있음</td>
                 </tr>
                 <tr>
-                    <td>공조 및 열관리(AC)</td>
-                    <td>공조기술이란 실내 공기의 온도, 습도, 냄새, 유해물질등 공기질을 적정하게 관리함으로써 탑승자에게 쾌적함을 제공할 수 있는 기술을
+                    <td class="text-left">공조 및 열관리(AC)</td>
+                    <td class="text-left">공조기술이란 실내 공기의 온도, 습도, 냄새, 유해물질등 공기질을 적정하게 관리함으로써 탑승자에게 쾌적함을 제공할 수 있는 기술을
                         의미하고 있으며, 최근에는 에너지 절감을 위해 공기온도 관리보다는 탑승자의 열쾌적성을 직접 예측하여 관리할 수 있는 기술로 확대됨…</td>
                 </tr>
                 <tr>
                     <td rowspan="2">수소차기술</td>
-                    <td>연료전지 시스템(BA)</td>
-                    <td>연료전지시스템은 내연기관차의 엔진에 해당하는 수소연료전지차 핵심 기술로 연료전지 스택, 수소 공급 장치, 공기 공급 장치, 열관리 장치로 구성됨
+                    <td class="text-left">연료전지 시스템(BA)</td>
+                    <td class="text-left">연료전지시스템은 내연기관차의 엔진에 해당하는 수소연료전지차 핵심 기술로 연료전지 스택, 수소 공급 장치, 공기 공급 장치, 열관리 장치로 구성됨
                         연료전지 스택은 수소와 공기 중 산소가 전기화학적으로 반응하여 전기를 생산하는 기술이며 수소 공급 장치는 수소저장장치에서 수소를 공급받아 스택에
                         수소를 공급하고 스택에서 미반응된 수소를 재순환하는 기술을 포함하고 있음….
                     </td>
                 </tr>
                 <tr>
-                    <td>수소저장 시스템 및 충전(BB)</td>
-                    <td>수소저장시스템은 수소연료전지차의 원료인 수소를 700기압으로 충전하고 연료전지시스템의 수소공급장치에서 사용할 수 압력으로 수소를 공급하는 기술이 포함됨…</td>
+                    <td class="text-left">수소저장 시스템 및 충전(BB)</td>
+                    <td class="text-left">수소저장시스템은 수소연료전지차의 원료인 수소를 700기압으로 충전하고 연료전지시스템의 수소공급장치에서 사용할 수 압력으로 수소를 공급하는 기술이 포함됨…</td>
                 </tr>
                 </tbody>
             </table>
@@ -158,6 +159,11 @@
         </div>
     </div>
 </div>
+
+<!-- loading icon -->
+<!--<div class="loading">-->
+<!--    <i class="fa-spin icon-loading"></i>-->
+<!--</div>-->
 
 
 </body>

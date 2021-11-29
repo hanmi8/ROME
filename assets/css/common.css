@@ -146,14 +146,18 @@ ul, li {vertical-align:middle;list-style:none;padding:0;margin:0;}
 .login .logo {position:absolute;left:40px;top:32px;}
 .login .logo a {display:block;}
 .login .login-wrap {position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);width:572px;padding:52px 56px;border-radius:40px;border:1px solid #0011C5;background:#fff;}
+.login .login-wrap button {cursor:pointer;}
 .login .login-wrap ul {margin-bottom:32px;}
 .login .login-wrap ul li {display:flex;align-items:center;width:100%;height:50px;background:#fff;border:1px solid #6A707D;border-radius:8px;padding:16px 20px;margin-bottom:16px;}
 .login .login-wrap ul li label {width:50px;font-size:14px;font-weight:700;line-height:16px;margin-right:16px;}
 .login .login-wrap ul li input {width:calc(100% - 100px - 50px);font-size:14px;font-weight:700;line-height:16px;border:none;}
 .login .login-wrap ul li button {width:100px;height:36px;border-radius:4px;background:#7A99FF;color:#fff;border:none;margin-right:-14px;}
+.login .login-wrap ul li button:hover {background: #4772ff;}
 .login .login-wrap .btn-wrap {display:flex;align-items:center;justify-content:space-between;}
 .login .login-wrap .btn-wrap div button {display:inline-flex;align-items:center;height:36px;border:1px solid #ddd;background:#fff;font-size:14px;border-radius:8px;margin-right:8px;padding:0 14px;}
+.login .login-wrap .btn-wrap div button:hover {background:#eee;}
 .login .login-wrap .btn-wrap .btn-login {display:inline-flex;align-items:center;height:36px;border:none;color:#fff;background:#4076FF;font-size:14px;border-radius:8px;padding:0 14px;}
+.login .login-wrap .btn-wrap .btn-login:hover {background: #1658f8;}
 
 
 
@@ -235,7 +239,7 @@ h5 {font-size:14px;line-height:20px;font-weight:400;margin-bottom:24px;color:#20
 .card-wrap div.card-item:last-child {margin-right:0;}
 .card-wrap div.card-item .chart-header {position:relative;}
 .card-wrap div.card-item .chart-header label {display:inline-block;margin:24px 0 21px 32px;font-size:16px;font-weight:700;}
-.card-wrap div.card-item .chart-header a {position:absolute;right:8px;top:8px;width:40px;height:40px;border-radius:100px;background:url('../images/icon_plus.png') no-repeat center;background-color:#7A99FF;transition:.2s all;}
+.card-wrap div.card-item .chart-header a {position:absolute;right:8px;top:8px;width:40px;height:40px;border-radius:100px;background:url('../images/icon_plus.png') no-repeat center #7A99FF;transition:.2s all;}
 .card-wrap div.card-item .chart-header a:hover {background-color:#0055FF;border-radius:100px 0 100px 100px;transition:.2s all;}
 .card-wrap div.card-item .chart-body {padding:0 16px 16px;}
 .card-wrap div.card-item .chart-body .chart {width:100%;height:286px;}
@@ -267,8 +271,12 @@ h5 {font-size:14px;line-height:20px;font-weight:400;margin-bottom:24px;color:#20
 .form-horizontal .form-group .btn-plus {width:32px !important;height:32px !important;min-width:auto;}
 
 .table-scroll-horizon-wrap {position:relative;width:100%;}
-.table-scroll-horizon {width:100%;overflow-x:hidden;border-right:1px solid #C7CDD4;}
-.nav-arrow-wrap {position:absolute;right:-24px;top:50%;transform:translateY(-50%);width:48px;}
+.table-scroll-horizon {width:100%;overflow-x:hidden;border-right:1px solid #C7CDD4;z-index:1;}
+.table-header   {overflow-y:scroll;}
+.table-body     {overflow-y:scroll;}
+.table-body table    {border-top:none;}
+
+.nav-arrow-wrap {position:absolute;right:-24px;top:50%;transform:translateY(-50%);width:48px;z-index:2;}
 
 .input-times-wrap {position:relative;display:inline-flex;align-items:center;}
 .input-times-wrap a.times {position:absolute;right:12px;top:5px;}
@@ -465,3 +473,14 @@ table.table-hs-code th div {border:1px solid #8B96AA;}
 .modal .content-header {display:flex;align-items:center;height:60px;background:#FBFCFF;padding:0 32px;border-bottom:1px solid #ddd;margin-bottom:13px;}
 .modal .content-header label {font-size:14px;font-weight:400;}
 .modal .content-header strong {font-size:16px;font-weight:700;color:#0055FF;}
+
+.loading {position:fixed;left:0;right:0;top:0;bottom:0;height:100%;background:rgba(255,255,255,0.5);z-index:101;}
+.loading .icon-loading {position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);}
+
+/* table x scroll */
+.table-scroll-horizon {position:relative;}
+.table-wrap {position:relative;}
+.clone {position:absolute;top:0;left:0;pointer-events:none;}
+.clone td {visibility:hidden;border:none;}
+.clone tbody th {visibility:visible;}
+.clone .fixed-side {border-right:1px solid #C7CDD4;border-bottom:1px solid #C7CDD4;visibility:visible;}

@@ -1,13 +1,19 @@
 $(function(){
     $('#gnb').load('gnb.html');
 
-
-
-    $('a').click(function(e){
-        var stringVal = $(e.target).attr('href')
-        if(stringVal.indexOf('#')  !== -1){
-            e.preventDefault()
+    $(document).on('click', 'a', function(e){
+        if($(e.target).is('[href]')){
+            console.log('target')
+            if($(e.target).attr('href').indexOf('#') !== -1) {
+                e.preventDefault()
+            }
+        }else if($(e.target).parent().is('[href]')){
+            console.log('parent')
+            if($(e.target).parent().attr('href').indexOf('#') !== -1){
+                e.preventDefault()
+            }
         }
+
     })
 
     $('.location-dropdown').find('strong').click(function(){
@@ -16,9 +22,34 @@ $(function(){
     })
 
     $('.dropdown-toggle').click(function(){
+        $('.dropdown-menu').slideUp(200)
         $(this).parent('.dropdown').toggleClass('on')
         $(this).next('.dropdown-menu').slideDown(200)
     })
+
+
+    var textArr = [];
+    $('.dropdown-menu').find('a').click(function(){
+        var originText = $(this).parents('.dropdown').attr('data-name')
+        var text = $(this).text()
+        var dropdownToggle = $(this).parents('.dropdown').children('.dropdown-toggle')
+
+        var itemIndex = textArr.indexOf(text)
+
+        if($(this).find('span').hasClass('on')){ // replace
+            textArr.splice(itemIndex, 1)
+        }else{                                      // insert
+            textArr.push(text)
+        }
+
+        dropdownToggle.text(textArr)
+        if(textArr.length < 1){
+            dropdownToggle.text(originText)
+        }
+    })
+
+
+
     $('.dropdown-call').click(function(){
         $(this).next('.dropdown-menu').slideDown(200)
     })
@@ -68,7 +99,6 @@ $(function(){
 
     // tab
     $('.tabs').find('a').click(function(e){
-        e.preventDefault()
         $(this).parent('li').siblings('li').removeClass('on')
         $(this).parent('li').addClass('on')
 
@@ -79,6 +109,7 @@ $(function(){
             $('.tab-contents').hide()
         }
         $(tabID).show();
+        // return false
     })
 
 
@@ -137,33 +168,37 @@ $(function(){
     generate_slider('income_average', {range: true,min: 1,max: 1000,step: 10,values: [ 1, 1000 ]})
 
     function generate_slider(id, options) {
+        var range = $('#'+id+'_range'),
+            min = $('#'+id+'_min'),
+            max = $('#'+id+'_max');
+
         options.slide = function( event, ui) {
-            $('#' + id +'_min').val(ui.values[ 0 ])
-            $('#' + id +'_max').val(ui.values[ 1 ])
+            min.val(ui.values[ 0 ])
+            max.val(ui.values[ 1 ])
         }
         // Range Slider
-        $( '#'+id+"_range" ).slider(options);
-        $('#'+id+'_min').val($('#'+id+'_range').slider('values' , 0));
-        $('#'+id+'_max').val($('#'+id+'_range').slider('values' , 1));
+        range.slider(options);
+        min.val(range.slider('values' , 0));
+        max.val(range.slider('values' , 1));
         // input min
-        $('#'+id+'_min').change(function () {
+        min.change(function () {
             var value = this.value
-            var maxValue = $('#'+id+'_range').slider('values' , 1);
+            var maxValue = range.slider('values' , 1);
             if(value > maxValue){
                 value = maxValue;
                 $(this).val(maxValue);
             }
-            $('#'+id+'_range').slider("values",0, value);
+            range.slider("values",0, value);
         });
         // input max
-        $('#'+id+'_max').change(function () {
+        max.change(function () {
             var value = this.value
             var minValue = $(this).siblings('#'+id+'_range').slider('values' , 0);
             if(value < minValue ){
                 value = minValue;
-                $('#'+id+'_max').val(minValue);
+                max.val(minValue);
             }
-            $('#'+id+'_range').slider("values",1, value);
+            range.slider("values",1, value);
         });
 
     }
